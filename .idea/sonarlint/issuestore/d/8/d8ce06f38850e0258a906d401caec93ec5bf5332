@@ -1,0 +1,37 @@
+
+”	java:S117¶"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìØìÈ8Ëåï°2J$df21da9a-d381-4d59-919d-bb6d359131f2
+”	java:S117¶"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìØìÈ8Ìåï°2J$34ad2d5c-774d-465e-bac4-53e784b7dafc
+”	java:S117¶"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìØìÈ8Ìåï°2J$a8e461ba-eb0b-4dde-aa63-f7c68150ee17
+”	java:S117¶"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìØìÈ8Ìåï°2J$496eb30b-f2d5-4a4a-914b-16efdebabd04
+”	java:S117¶"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìØìÈ8Ìåï°2J$e4a217ef-4da7-4c71-8e54-ea64c26f25a5
+”	java:S117¶"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìØìÈ8Ìåï°2J$42ba712a-d68a-43b4-811d-04413f341aa4
+•
+java:S1104'"RMake tmpMap a static final constant or non-public and provide accessors if needed.(õ÷ëè8Íåï°2J$2ed77655-e219-46ec-97e7-8964fea2e443
+w
+java:S1874P"/Remove this use of "isSolid"; it is deprecated.(½§ı×üÿÿÿÿ8ºæï°2J$27eba1e2-0e31-4782-a4f5-b8fe4370cf03
+ƒ	java:S125_"<This block of commented-out lines of code should be removed.(³ªƒøÿÿÿÿ8»æï°2J$bddb254c-103b-4e03-8ce8-cf823975cf7d
+š
+java:S3776k"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(ø×Ìªüÿÿÿÿ8¼æï°2J$f4a6bebe-802a-4339-837d-58f247a447ea
+ƒ	java:S125l"<This block of commented-out lines of code should be removed.(—š“™ùÿÿÿÿ8½æï°2J$04580195-58cd-4e71-a8ca-bca53c448cff
+Š
+java:S6201’"FReplace this instanceof check and cast with 'instanceof Player player'(‘²Ï¢8Àæï°2J$74a26989-b366-4728-b43f-c4555e434020
+’
+java:S6201²"IReplace this instanceof check and cast with 'instanceof LivingEntity mob'(»ÍŞıÿÿÿÿ8Âæï°2J$276e5190-71cf-4917-8e1d-c8d67f614c61
+‚
+java:S1874Å">Remove this use of "getExplosionResistance"; it is deprecated.(×‚èù8Ãæï°2J$ccca0f8e-9dce-45a2-9b21-74479508556c
+€
+java:S1117¿"7Rename "pos" which hides the field declared at line 35.(Âœ•şøÿÿÿÿ8Êæï°2J$d0c81a80-f108-4dad-950d-465d17f3190b
+N
+java:S1128"1Remove this unused import 'com.google.gson.Gson'.(–§8‘Õò°2
+r
+java:S1128"URemove this unused import 'dan200.computercraft.core.computer.mainthread.MainThread'.(›½„†8‘Õò°2
+€
+java:S1128"^Remove this unused import 'dan200.computercraft.core.computer.mainthread.MainThreadScheduler'.(³˜¹‘ùÿÿÿÿ8‘Õò°2
+\
+java:S1128":Remove this unused import 'java.util.function.BiConsumer'.(¿ÍÅøÿÿÿÿ8‘Õò°2
+Y
+java:S1128"7Remove this unused import 'java.util.stream.IntStream'.(ÙÉ½Ÿùÿÿÿÿ8‘Õò°2
+~
+java:S1068&"6Remove this unused "serverComputerSelf" private field.(À…÷ºùÿÿÿÿ8Ìæï°2J$b7f52d33-ea41-4ef8-8357-d8ce480d0df8
+}
+java:S1144‰"4Remove this unused private "getAABBicCenter" method.(ÍÓ¢£úÿÿÿÿ8Íæï°2J$33d26ad8-2ebd-40d0-ad6d-9b8bc0873c8f

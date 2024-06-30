@@ -1,0 +1,20 @@
+
+¥
+java:S1104"]Make ComputerPosMapper a static final constant or non-public and provide accessors if needed.(±×ıÊùÿÿÿÿ8‰£ÙÊú1J$851534b2-1d3e-4017-8bbd-f76b85566929
+£
+java:S1104"`Make ComputerStatusMapper a static final constant or non-public and provide accessors if needed.(÷äœ‘8Š£ÙÊú1J$f0ab95ef-fa08-45b0-b080-6dcc420a78de
+
+java:S1444"7Make this "public static ComputerPosMapper" field final(±×ıÊùÿÿÿÿ8Š£ÙÊú1J$5c7b5e36-fb78-4271-af7a-9e325cca8bd0
+}
+java:S1444":Make this "public static ComputerStatusMapper" field final(÷äœ‘8Š£ÙÊú1J$eeba3708-b8ec-41f7-9d6d-03fee6b8bdeb
+œ	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(†¡ŠÅ8£ÙÊú1J$a290ed26-b9d1-4772-9b0f-dcf3581b1348
+¤
+java:S3008"\Rename this field "ComputerPosMapper" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±×ıÊùÿÿÿÿ8£ÙÊú1J$5bb0df22-76ff-4a89-a3be-3841299dc42a
+¢
+java:S3008"_Rename this field "ComputerStatusMapper" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷äœ‘8£ÙÊú1J$2d0b48fa-282f-4616-a702-40e3c247acf4
+e
+java:S2386"Make this member "protected".(±×ıÊùÿÿÿÿ8£ÙÊú1J$f50bd9ba-9104-4d75-955f-47e1c45829e7
+`
+java:S2386"Make this member "protected".(÷äœ‘8£ÙÊú1J$8c5712ed-1c92-4859-be57-f1e3179e725c
+e
+java:S1118"Hide this public constructor.(Ø½²Òûÿÿÿÿ8£ÙÊú1J$ed0433e6-1fd5-4b44-a4bb-410b7a704dcc
