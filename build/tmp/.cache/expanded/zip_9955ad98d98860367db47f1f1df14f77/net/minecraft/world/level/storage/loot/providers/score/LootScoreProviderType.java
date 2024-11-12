@@ -1,0 +1,13 @@
+package net.minecraft.world.level.storage.loot.providers.score;
+
+import net.minecraft.world.level.storage.loot.Serializer;
+import net.minecraft.world.level.storage.loot.SerializerType;
+
+/**
+ * The SerializerType for {@link ScoreboardNameProvider}.
+ */
+public class LootScoreProviderType extends SerializerType<ScoreboardNameProvider> {
+   public LootScoreProviderType(Serializer<? extends ScoreboardNameProvider> pSerializer) {
+      super(pSerializer);
+   }
+}

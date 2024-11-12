@@ -1,0 +1,53 @@
+
+•
+java:S11046"RMake tmpMap a static final constant or non-public and provide accessors if needed.(õ÷ëè8½³²2J$fb6dc136-6186-4b1c-b5f0-095adb8ff369
+w
+java:S1874f"/Remove this use of "isSolid"; it is deprecated.(½§ı×üÿÿÿÿ8¶½³²2J$56260eff-e109-4f10-a388-f532c47302d0
+ƒ	java:S125u"<This block of commented-out lines of code should be removed.(³ªƒøÿÿÿÿ8·½³²2J$f827693b-3754-4a5b-a6e8-b0c7491820d4
+–
+java:S3776€"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(ò´ÕÏ8¸½³²2J$35a28b82-8d86-4412-9945-b42205de8122
+q	java:S108")Either remove or fill this block of code.(½Ñë×ùÿÿÿÿ8»½³²2J$cf7e1500-cf48-4162-add8-68e6857504e2
+‰
+java:S6201®"FReplace this instanceof check and cast with 'instanceof Player player'(£äŠj8¼½³²2J$dfa9afae-a888-4db1-aeff-25b7801ced1b
+
+java:S6201Î"IReplace this instanceof check and cast with 'instanceof LivingEntity mob'(±Ú¡8¿½³²2J$e113a388-d33b-46e4-b3e7-cbbd113dc393
+‚
+java:S1874ê">Remove this use of "getExplosionResistance"; it is deprecated.(×‚èù8À½³²2J$62faa476-9eb3-4e49-ac6f-42a8e9da08e3
+q	java:S108”")Either remove or fill this block of code.(½Ñë×ùÿÿÿÿ8Ã½³²2J$26a48450-1c49-44f5-a192-35ca8fee7904
+x
+java:S1611ô"/Remove the parentheses around the "e" parameter(ªµ¹ÿûÿÿÿÿ8È½³²2J$e53d842e-56c4-453a-b33d-6b2152b7d8bf
+‘
+java:S6201¬"HReplace this instanceof check and cast with 'instanceof Monster monster'(‘Íœêüÿÿÿÿ8Ğ½³²2J$45bfc145-9c39-409c-bc1c-5f25611fa19e
+u
+java:S1602Ö",Remove useless curly braces around statement(êúşÿÿÿÿ8Ó½³²2J$d411a85e-52bd-47b1-aa25-fa63afbcf257
+u
+java:S1602å",Remove useless curly braces around statement(€É–øÿÿÿÿ8Ô½³²2J$cc2981f8-1bf8-4ed2-8332-e7272770e08b
+t
+java:S1128"1Remove this unused import 'com.google.gson.Gson'.(–§8Õ½³²2J$2751b140-8ee5-4302-9c5c-79cc4cf2e847
+›
+java:S1128"SRemove this unused import 'dan200.computercraft.client.render.ItemMapLikeRenderer'.(Â›ó¯ùÿÿÿÿ8Õ½³²2J$0f094fff-554e-4e1d-85ad-735bc15b8642
+˜
+java:S1128"URemove this unused import 'dan200.computercraft.core.computer.mainthread.MainThread'.(›½„†8Õ½³²2J$e0625ba1-3e24-464a-9ff0-910a3e24f7d2
+¦
+java:S1128	"^Remove this unused import 'dan200.computercraft.core.computer.mainthread.MainThreadScheduler'.(³˜¹‘ùÿÿÿÿ8Õ½³²2J$bac0c9f6-ec4a-45f6-afaf-01a9b24b27bd
+
+java:S1128
+"URemove this unused import 'dan200.computercraft.shared.computer.core.ServerComputer'.(Ú×¦ÿıÿÿÿÿ8Õ½³²2J$42cd284b-0a0c-4a8c-9cc8-7b87dd8b9906
+~
+java:S1128";Remove this unused import 'net.minecraft.client.Minecraft'.(áìÒÎ8Õ½³²2J$aa60e2e2-a0f3-429b-9f91-68b2bef9da4f
+‹
+java:S1128"CRemove this unused import 'net.minecraft.server.level.ServerLevel'.(ŞÇÈ¢ıÿÿÿÿ8Õ½³²2J$f22e19ac-93d0-4891-9878-263082d48425
+‰
+java:S1128"FRemove this unused import 'net.minecraft.world.entity.monster.Zombie'.(‡¹Ê8Õ½³²2J$6d53e3f6-e942-42a4-96d7-2359f2ffa42c
+„
+java:S1128"ARemove this unused import 'net.minecraft.world.level.LightLayer'.(Öƒ¥Á8Õ½³²2J$bfff46bd-69a2-4747-a799-8e8eb087d939
+‹
+java:S1128"HRemove this unused import 'net.minecraftforge.common.util.ItemStackMap'.(ÃãÂ8Õ½³²2J$6b3902ac-ca59-4b39-8424-4bec4b130de8
+
+java:S1128"KRemove this unused import 'net.minecraftforge.server.ServerLifecycleHooks'.(¾¤Œ 8Õ½³²2J$1553db73-5b55-4283-9b1f-39a4604e044c
+„
+java:S1128$"BRemove this unused import 'org.valkyrienskies.core.impl.shadow.B'.(²™áa8Õ½³²2J$d9122d29-33e3-49c1-b9a5-4aa6badf5522
+‚
+java:S1128,":Remove this unused import 'java.util.function.BiConsumer'.(¿ÍÅøÿÿÿÿ8Õ½³²2J$48fd23f2-45c4-4cd6-b67a-e0de2e4cb45d
+}
+java:S1144Ã"4Remove this unused private "getAABBicCenter" method.(ÍÓ¢£úÿÿÿÿ8Õ½³²2J$ce7e3968-faeb-407d-9ae1-cdf3a0185a0d

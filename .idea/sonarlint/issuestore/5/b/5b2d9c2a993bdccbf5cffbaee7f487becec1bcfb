@@ -1,0 +1,32 @@
+
+h
+java:S1192F"LDefine a constant instead of duplicating this literal "false value" 3 times.(ÈõA8ˆÉËÿ±2
+“	java:S117K"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô±‡Ñ8Æˆ´ÿ±2J$0ca0278c-c978-414c-a2fc-cb7d25da66f3
+“	java:S117K"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô±‡Ñ8Æˆ´ÿ±2J$6d57dc71-6125-4baf-9807-7ca071953e7a
+“	java:S117K"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô±‡Ñ8Æˆ´ÿ±2J$6bed3f89-7c92-45c0-bf04-e7336dc59cdd
+§
+java:S1104"dMake ComputerConnectionMapper a static final constant or non-public and provide accessors if needed.(íäáÕ8Çˆ´ÿ±2J$737a3103-7de2-41e4-9d22-0b99773af709
+
+java:S1444">Make this "public static ComputerConnectionMapper" field final(íäáÕ8Çˆ´ÿ±2J$6cb10c41-a4f4-42d9-81c6-58dfbc702dca
+
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(ÿß’‚øÿÿÿÿ8Şˆ´ÿ±2J$1c024af6-66e3-4d02-9c70-5df8edf3c237
+
+java:S2095z"GUse try-with-resources or close this "Statement" in a "finally" clause.(æÄ™üÿÿÿÿ8Şˆ´ÿ±2J$f227e279-d8f3-45d5-a2ac-a872ac09c89d
+‹
+java:S2095…"GUse try-with-resources or close this "Statement" in a "finally" clause.(Óçš›8Şˆ´ÿ±2J$c6812faa-aa1e-4b80-abba-1b3cc26bbf22
+
+java:S2637D"EThis method's return value is marked "@NotNull" but null is returned.(È²½ôûÿÿÿÿ8ßˆ´ÿ±2J$ee787283-0be0-4578-beac-e5ef3501c3fc
+¦
+java:S3008"cRename this field "ComputerConnectionMapper" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íäáÕ8ßˆ´ÿ±2J$59f101fe-98b7-4e3c-9d1c-f21f44ad4bb3
+`
+java:S2386"Make this member "protected".(íäáÕ8áˆ´ÿ±2J$41385279-315c-4ec3-8716-5b252066d06b
+r	java:S1060"+Replace this use of System.out by a logger.(¬’˜ìûÿÿÿÿ8äˆ´ÿ±2J$0bf11a38-21c8-4f36-b5ca-2a241c98253b
+r	java:S1062"+Replace this use of System.out by a logger.(úµ·ˆÿÿÿÿÿ8äˆ´ÿ±2J$7801a62d-60b7-4ad4-8a01-fd24bb12fea4
+r	java:S1065"+Replace this use of System.out by a logger.(×¸Îûøÿÿÿÿ8åˆ´ÿ±2J$e0c60dd0-0b55-4b19-98b0-028ebdd8f484
+p	java:S108:")Either remove or fill this block of code.(¬Àáªøÿÿÿÿ8åˆ´ÿ±2J$35e18ea1-1e72-47da-8d8d-7a19ec2e3488
+p	java:S108B")Either remove or fill this block of code.(‡ÇË¸ıÿÿÿÿ8æˆ´ÿ±2J$b8c0ae0c-9256-40cd-aa91-0fbc32c9a5d8
+	java:S100K"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô±‡Ñ8æˆ´ÿ±2J$95d6d2ed-52d1-4e09-8919-4edd6a6c83e7
+~
+java:S1128";Remove this unused import 'net.minecraft.client.Minecraft'.(áìÒÎ8´¡Êÿ±2J$6ddba5f2-4f99-40da-97e2-4e7583fa1f4d
+‰
+java:S1128"ARemove this unused import 'net.minecraft.server.MinecraftServer'.(“Í€Ÿüÿÿÿÿ8´¡Êÿ±2J$a13032dd-78dc-44ca-871d-28d558a875da

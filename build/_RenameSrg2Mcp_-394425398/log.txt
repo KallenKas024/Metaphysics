@@ -1,0 +1,17 @@
+Java Launcher: C:\Users\Kallen\.jdks\corretto-17.0.11\bin\java.exe
+Arguments: '--task, SRG_TO_MCP, --input, C:\Users\Kallen\.gradle\caches\modules-2\files-2.1\cc.tweaked\cc-tweaked-1.20.1-forge\1.113.1\ca74a2ad65f149e7465e849b479abec863a82bf1\cc-tweaked-1.20.1-forge-1.113.1.jar, --output, C:\Users\Kallen\.gradle\caches\forge_gradle\deobf_dependencies\cc\tweaked\cc-tweaked-1.20.1-forge\1.113.1_mapped_parchment_2023.09.03-1.20.1\cc-tweaked-1.20.1-forge-1.113.1_mapped_parchment_2023.09.03-1.20.1.jar, --mcp, C:\Users\Kallen\.gradle\caches\parchmentgradle\org\parchmentmc\data\parchment-1.20.1\2023.09.03\parchment-1.20.1-2023.09.03.zip, --strip-signatures'
+Classpath:
+ - C:\Users\Kallen\.gradle\caches\forge_gradle\maven_downloader\net\minecraftforge\installertools\1.4.4\installertools-1.4.4-fatjar.jar
+Working directory: C:\Users\Kallen\Downloads\Metaphysics-0.0.4\Metaphysics-0.0.4\build\_RenameSrg2Mcp_-394425398
+Main class: net.minecraftforge.installertools.ConsoleTool
+====================================
+Task: SRG_TO_MCP
+Input:  C:\Users\Kallen\.gradle\caches\modules-2\files-2.1\cc.tweaked\cc-tweaked-1.20.1-forge\1.113.1\ca74a2ad65f149e7465e849b479abec863a82bf1\cc-tweaked-1.20.1-forge-1.113.1.jar
+Output: C:\Users\Kallen\.gradle\caches\forge_gradle\deobf_dependencies\cc\tweaked\cc-tweaked-1.20.1-forge\1.113.1_mapped_parchment_2023.09.03-1.20.1\cc-tweaked-1.20.1-forge-1.113.1_mapped_parchment_2023.09.03-1.20.1.jar
+MCP:    C:\Users\Kallen\.gradle\caches\parchmentgradle\org\parchmentmc\data\parchment-1.20.1\2023.09.03\parchment-1.20.1-2023.09.03.zip
+Loading MCP Data
+Processing ZIP file
+Stripped Manifest of sha digests
+Stripped Manifest of sha digests
+Stripped Manifest of sha digests
+Process complete

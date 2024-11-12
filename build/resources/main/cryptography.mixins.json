@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.example.cryptography.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "cryptography.refmap.json",
+  "mixins": [
+    "FixedWidthFontRendererMixin",
+    "TileComputerMixin",
+    "TurtleMoveCommandMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
