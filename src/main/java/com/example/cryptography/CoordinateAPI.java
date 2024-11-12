@@ -53,7 +53,7 @@ public class CoordinateAPI implements ILuaAPI {
     private final Level level;
     public Map<Map<String, Integer>, Map<String, Object>> tmpMap;
     private Computer computer;
-
+    private Thread t = null;
     public CoordinateAPI(BlockPos pos, int id, Level level, Computer computer) {
         this.pos = pos;
         this.id = id;
@@ -417,7 +417,11 @@ public class CoordinateAPI implements ILuaAPI {
     }
     @LuaFunction
     public final void scanTopography(int x, int z, int x2, int z2, boolean isUnderSurface) {
-        new Scan(x,z,x2,z2,this.level,this.computer, isUnderSurface).run();
+        ExecutorService fixedThreadPool = Executors.newFixedThreadPool(1);
+        fixedThreadPool.execute(
+            new Scan(x, z, x2, z2, this.level, this.computer, isUnderSurface)
+        );
+        fixedThreadPool.shutdown();
     }
     @LuaFunction
     public final Map<String, Map<String, Object>> getMonster(int x, int y, int z, int x2, int y2, int z2) {
@@ -467,35 +471,38 @@ class Scan implements Runnable {
         int maxZ = Math.max(z, z2) + 1;
         AtomicInteger maxY = new AtomicInteger(Integer.MIN_VALUE);
         AtomicInteger minY = new AtomicInteger(Integer.MAX_VALUE);
+        AtomicInteger finalMinY1 = minY;
         IntStream.rangeClosed(minX, maxX - 1).parallel().forEach(ix -> {
             IntStream.rangeClosed(minZ, maxZ - 1).parallel().forEach(iz -> {
                 int height = level.getHeight(Heightmap.Types.WORLD_SURFACE, ix, iz);
                 maxY.getAndUpdate(currentMax -> Math.max(currentMax, height));
-                minY.getAndUpdate(currentMin -> Math.min(currentMin, height));
+                finalMinY1.getAndUpdate(currentMin -> Math.min(currentMin, height));
             });
         });
+        if (isUnderSurface) {
+            minY = new AtomicInteger(-64);
+        }
         int sizeX = maxX - minX;
         int sizeY = maxY.get() - minY.get();
-        if (isUnderSurface) {
-            sizeY = -64;
-        }
         int sizeZ = maxZ - minZ;
-        int[][][] array = new int[sizeX][sizeY][sizeZ];
-        int finalSizeY = sizeY;
+        Map<Map<String, Integer>, Integer> map = new HashMap<>();
+        AtomicInteger finalMinY = minY;
         IntStream.rangeClosed(0, sizeX - 1).parallel().forEach(ox -> {
             IntStream.rangeClosed(0, sizeZ - 1).parallel().forEach(oz -> {
-                for (int oy = 0; oy < finalSizeY; oy++) {
+                for (int oy = 0; oy < sizeY; oy++) {
                     int ix = ox + minX;
                     int iz = oz + minZ;
-                    int iy = oy + minY.get();
-                    array[ox][oy][oz] = this.level.getBlockState(new BlockPos(ix, iy, iz)).isAir() ? 0 : 1;
+                    int iy = oy + finalMinY.get();
+                    Map<String,Integer> map2 = new ConcurrentHashMap<>();
+                    map2.put("x", ix);
+                    map2.put("y", iy);
+                    map2.put("z", iz);
+                    map.put(map2, this.level.getBlockState(new BlockPos(ix, iy, iz)).isAir() ? 0 : 1);
                 }
             });
         });
-        if (computer != null && computer.isOn()) {
-            computer.queueEvent("ComputerScanTopographyDone", array);
-        } else {
-            Thread.currentThread().interrupt();
+        if (computer != null) {
+            computer.queueEvent("ComputerScanTopographyDone", new Object[]{map});
         }
     }
 }

@@ -22,7 +22,6 @@ public class CryptographyAPI implements ILuaAPI {
     public final int AES_KEY_SIZE = 256;
     public final int GCM_IV_LENGTH = 12;
     public final int TLEN = 128;
-
     @Override
     public String[] getNames() {
         return new String[] {"crypto", "cryptography"};

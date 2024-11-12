@@ -1,71 +1,71 @@
 
-‘	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òß×“ûÿÿÿÿJ$ec0aeb78-fbd9-49c5-8dc6-d463db0699a0
-‘	java:S117J"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚¾»øùÿÿÿÿJ$09af0737-3c64-40cf-a932-fec7db13ba7e
-‘	java:S117["QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜–¾ÓûÿÿÿÿJ$5d391097-307a-48b4-b91c-9b5c1cad58f4
+‘	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òß×“ûÿÿÿÿJ$b11fcea8-e315-4151-bd5a-bdf86c276833
+‘	java:S117I"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚¾»øùÿÿÿÿJ$38d68c41-120d-46fb-b6d0-b4feb2d8ea20
+‘	java:S117Z"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜–¾ÓûÿÿÿÿJ$57220757-5a9f-44e1-bf96-1098ef017958
 
-java:S3034@">Prevent "int" promotion by adding "& 0xff" to this expression.(ÇñàßşÿÿÿÿJ$195a9a01-91b1-4d71-8d4e-05a074196d88
+java:S3034?">Prevent "int" promotion by adding "& 0xff" to this expression.(ÇñàßşÿÿÿÿJ$dbff5731-767e-4e66-9373-3f660689eaca
 …
-java:S2259b"DA "NullPointerException" could be thrown; "sha256" is nullable here.(“ìÂßıÿÿÿÿJ$3105f91c-9ffe-455f-a43e-e77e030fe539
-…
-java:S2259V"DA "NullPointerException" could be thrown; "sha512" is nullable here.(İÛÂùÿÿÿÿJ$e59ad72c-82db-4922-835b-ed5471688b1f
-
-java:S2259™"DA "NullPointerException" could be thrown; "cipher" is nullable here.(âòÓºJ$ee7a9127-ff27-428f-8455-1d6507bdef22
-…
-java:S2259s"DA "NullPointerException" could be thrown; "cipher" is nullable here.(™åŒ÷ùÿÿÿÿJ$96c33346-2bf8-47d4-8ed8-02f69dc88199
-€
-java:S2259ˆ"CA "NullPointerException" could be thrown; "bytes" is nullable here.(ûï”–J$a1c78bb9-3005-41ca-91b2-27d0faeaa5a8
-‚
-java:S2259Ã"@A "NullPointerException" could be thrown; "kf" is nullable here.(ÂäÍÓüÿÿÿÿJ$a1de0d5e-feb3-449b-865a-b738de84fb67
-ƒ
-java:S2259Ô"AA "NullPointerException" could be thrown; "kam" is nullable here.(Ü³µúÿÿÿÿJ$53a8a2f1-0468-41b1-b4f7-e8c2da691632
-ƒ
-java:S2259ª"AA "NullPointerException" could be thrown; "kpg" is nullable here.(•Ï¨¨ıÿÿÿÿJ$b1969111-1547-4d72-ba1c-bab4d6fa96e6
-€
-java:S2259R"DA "NullPointerException" could be thrown; "sha512" is nullable here.(†İäÏJ$8b9001bc-ea6d-473d-8f82-b2624b5393f1
+java:S2259r"DA "NullPointerException" could be thrown; "cipher" is nullable here.(™åŒ÷ùÿÿÿÿJ$37093ac0-6349-420c-8dbb-280fb32458d2
 †
-java:S2259“"DA "NullPointerException" could be thrown; "cipher" is nullable here.(èÏÖ‚øÿÿÿÿJ$cfd1a029-717c-43d4-8a06-d0246cea5904
+java:S2259’"DA "NullPointerException" could be thrown; "cipher" is nullable here.(èÏÖ‚øÿÿÿÿJ$3d662eb0-8e26-4a3e-bb9c-4da964022ac3
+‚
+java:S2259Â"@A "NullPointerException" could be thrown; "kf" is nullable here.(ÂäÍÓüÿÿÿÿJ$9278bc0e-f21a-4460-a3a0-0304bb338b30
+
+java:S2259˜"DA "NullPointerException" could be thrown; "cipher" is nullable here.(âòÓºJ$09c2163b-b200-4f98-a16a-4a2673155c68
+ƒ
+java:S2259©"AA "NullPointerException" could be thrown; "kpg" is nullable here.(•Ï¨¨ıÿÿÿÿJ$91fa5390-c35c-4594-ab8e-66c3e1b4e3fb
+…
+java:S2259a"DA "NullPointerException" could be thrown; "sha256" is nullable here.(“ìÂßıÿÿÿÿJ$1a0945ef-62fb-4b6a-a204-980dbddbdf65
+…
+java:S2259U"DA "NullPointerException" could be thrown; "sha512" is nullable here.(İÛÂùÿÿÿÿJ$fa765378-9328-4b38-9f41-5b24381b06d7
 €
-java:S2259z"DA "NullPointerException" could be thrown; "cipher" is nullable here.(ÂÌì¯J$f9281627-c1c6-4ae0-9d24-3399f940ffad
-Š	java:S116"ORename this field "ALGO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ò§ãéJ$c17cf6be-e55e-4c2a-a1d1-05d41a2526eb
-—	java:S116"WRename this field "AES_KEY_SIZE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âïŸ§ıÿÿÿÿJ$cedc4499-7f24-4908-b786-73793d7333eb
-˜	java:S116"XRename this field "GCM_IV_LENGTH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïëÀªüÿÿÿÿJ$41039130-ad48-4084-a7e4-5dde1f8891b1
-Š	java:S116"ORename this field "TLEN" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£Œé€J$a878151b-d745-4578-85cf-5e0f0a8013af
+java:S2259y"DA "NullPointerException" could be thrown; "cipher" is nullable here.(ÂÌì¯J$3d3fcbb5-2f0a-4b54-840e-f9c10c635b71
+€
+java:S2259Q"DA "NullPointerException" could be thrown; "sha512" is nullable here.(†İäÏJ$61754dd3-0515-457d-9655-442750fdf79a
+€
+java:S2259‡"CA "NullPointerException" could be thrown; "bytes" is nullable here.(ûï”–J$5cdc5578-dc60-4223-bd40-52bdba6f0a24
+ƒ
+java:S2259Ó"AA "NullPointerException" could be thrown; "kam" is nullable here.(Ü³µúÿÿÿÿJ$ef6aad01-ba0c-4c97-ae55-3432b930d544
+Š	java:S116"ORename this field "ALGO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ò§ãéJ$17a050cf-3fef-4754-ac4e-89fea4e37efe
+—	java:S116"WRename this field "AES_KEY_SIZE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âïŸ§ıÿÿÿÿJ$d81a421a-dcf7-41b2-b9d3-5bfd5ac475c8
+˜	java:S116"XRename this field "GCM_IV_LENGTH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïëÀªüÿÿÿÿJ$3949ea6b-49ea-44a7-a5ae-14a2952fb696
+Š	java:S116"ORename this field "TLEN" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£Œé€J$b71dc02d-025c-4e9c-845b-d6d44bcddc7f
 ]
-java:S1170"!Make this final field static too.(Ò§ãéJ$f5a871a2-5ba9-4ccd-9746-291376a90fec
+java:S1170"!Make this final field static too.(Ò§ãéJ$8ef2b78c-ce73-41cf-a605-5e44817a25e4
 b
-java:S1170"!Make this final field static too.(âïŸ§ıÿÿÿÿJ$c0d144ac-d644-4669-b276-17a1d9f05ea1
+java:S1170"!Make this final field static too.(âïŸ§ıÿÿÿÿJ$dc35d9ac-76e4-436b-bb43-1c180a3612b8
 b
-java:S1170"!Make this final field static too.(ïëÀªüÿÿÿÿJ$1a93904e-1447-4025-a81c-968f9b1cbe21
+java:S1170"!Make this final field static too.(ïëÀªüÿÿÿÿJ$dbd8cf6c-8ad3-4d00-be07-e5d28dff4a2e
 ]
-java:S1170"!Make this final field static too.(£Œé€J$2c6e87f2-b585-474b-9915-d796297b09be
+java:S1170"!Make this final field static too.(£Œé€J$830b4467-748f-4f8b-9dca-eaf02f4930bf
 b
-java:S11688"&Return an empty array instead of null.(¥¹ïJ$ca4e9a4b-9c10-48ea-890c-092173767f72
-	java:S100J"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚¾»øùÿÿÿÿJ$4d28cdfc-8f15-43ff-9ae2-dda484e911bf
-i	java:S108N")Either remove or fill this block of code.(£ê®êşÿÿÿÿJ$5f10b27d-e1e0-414d-bde4-62918bcb104f
-d	java:S108S")Either remove or fill this block of code.(€Ü©•J$c5b343f7-d65b-4c8d-a518-95fb4a4b3d18
-	java:S100["NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜–¾ÓûÿÿÿÿJ$3c83b3b9-e2c5-4ffc-bbee-0175da139bb2
-i	java:S108_")Either remove or fill this block of code.(£ê®êşÿÿÿÿJ$c15ad366-9973-4e06-8016-1ee34d248867
-	java:S100h"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ï®æ†ıÿÿÿÿJ$24f4bba5-c618-4a2e-9c70-4801c7d1b0c3
-d	java:S108l")Either remove or fill this block of code.(Ö›š¤J$c7f9a6af-0dac-49e8-a66c-1d9330c29b4c
-i	java:S108t")Either remove or fill this block of code.(àè‰çúÿÿÿÿJ$f0002cbc-fadf-4e02-a7ad-bcd13cc47568
-d	java:S108{")Either remove or fill this block of code.(ÂÄ³ŒJ$b8984067-0751-4f26-b1a3-b61c43f29d52
-	java:S100…"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÈÂ úÿÿÿÿJ$a3dfffcd-891a-4e08-9103-abfcab5978eb
-e	java:S108")Either remove or fill this block of code.(Ö›š¤J$fabad69b-4a7f-488f-b469-8a58dbf4f501
-j	java:S108”")Either remove or fill this block of code.(àè‰çúÿÿÿÿJ$193385b4-b30e-478c-aecb-c13d2655db23
-e	java:S108š")Either remove or fill this block of code.(ÂÄ³ŒJ$64754aa8-ee6c-41dd-a1bd-3447bf6a6c77
-Š	java:S100¡"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğÀ¢”J$3f04633c-e0bb-4633-b897-be8768634ede
-j	java:S108¥")Either remove or fill this block of code.(£ê®êşÿÿÿÿJ$a69937b0-bc9f-4a38-b3a0-674c0b078f27
-e	java:S108«")Either remove or fill this block of code.(õî±ÚJ$854a08b8-4bad-42c5-82a1-6bc4cf7c0ded
-	java:S100¸"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶»·ÇøÿÿÿÿJ$0be644f7-83e4-4e36-9672-630a45d378aa
-j	java:S108¾")Either remove or fill this block of code.(£ê®êşÿÿÿÿJ$ede27a38-cdaa-4e54-8b31-e8d2094567be
-j	java:S108Ä")Either remove or fill this block of code.(£Ï…ÁÿÿÿÿÿJ$ca89014e-50c0-48bc-9773-1fd6253935b1
-j	java:S108Ê")Either remove or fill this block of code.(£Ï…ÁÿÿÿÿÿJ$a760087d-d261-480c-bed9-99d233d0aae4
-j	java:S108Ğ")Either remove or fill this block of code.(£ê®êşÿÿÿÿJ$7d488da4-fb7e-4f9a-a72b-ffec00e2bba8
-e	java:S108Õ")Either remove or fill this block of code.(©‰ğœJ$0bd3480b-c9b1-4892-bf71-10bd14833e0c
-e	java:S108Ú")Either remove or fill this block of code.(©‰ğœJ$c60889b1-0491-4198-97dd-efb035f04587
-	java:S100â"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆùØÂùÿÿÿÿJ$924a0cbc-6b09-4591-89e0-01849e0d6525
-j	java:S108ğ")Either remove or fill this block of code.(Æ¸Û‚øÿÿÿÿJ$afb34a26-96be-49b5-bef1-de054c9cd8cc
-Š	java:S100÷"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªÖºóJ$bf068f5a-87c5-40b4-a952-f2c5f4714b81
-j	java:S108„")Either remove or fill this block of code.(Æ¸Û‚øÿÿÿÿJ$2c82ede8-a44a-4bbb-b675-b43b49f9cc34
-	java:S100Š"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚ª¨“ıÿÿÿÿJ$37259f2e-e49e-4cd2-ae23-952d4963891f
-j	java:S108")Either remove or fill this block of code.(£ê®êşÿÿÿÿJ$fa9c25f1-eae0-40c1-a73d-5f563f6bd508
+java:S11687"&Return an empty array instead of null.(¥¹ïJ$5c92a410-b54b-4436-bd31-472b990fe1c4
+	java:S100I"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚¾»øùÿÿÿÿJ$ac0af889-7aa5-49b2-aa17-5a7844c60fef
+i	java:S108M")Either remove or fill this block of code.(£ê®êşÿÿÿÿJ$5c31ad39-73b9-46c5-96f9-902f1670682d
+d	java:S108R")Either remove or fill this block of code.(€Ü©•J$cb5e607a-d22f-417c-9054-9e15fcb186cb
+	java:S100Z"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜–¾ÓûÿÿÿÿJ$e95fad69-3868-4360-aab3-6f28e496b725
+i	java:S108^")Either remove or fill this block of code.(£ê®êşÿÿÿÿJ$be363680-0601-4325-9c5e-1cf074d15cf6
+	java:S100g"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ï®æ†ıÿÿÿÿJ$7cfb9398-9e07-4561-a2ad-0b7e3da09578
+d	java:S108k")Either remove or fill this block of code.(Ö›š¤J$6b970c85-46b6-417f-9f31-faa0dbb2ab7a
+i	java:S108s")Either remove or fill this block of code.(àè‰çúÿÿÿÿJ$a45d96ee-005f-465b-a52d-69763faf657b
+d	java:S108z")Either remove or fill this block of code.(ÂÄ³ŒJ$c919c200-b33a-405d-96dd-117e01dd7152
+	java:S100„"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÈÂ úÿÿÿÿJ$aecbf1db-b21c-4f09-b0d5-e3907f7c884c
+e	java:S108")Either remove or fill this block of code.(Ö›š¤J$34044926-3279-413b-a9db-68ff964a2f0f
+j	java:S108“")Either remove or fill this block of code.(àè‰çúÿÿÿÿJ$da31f6e3-f2cd-4123-ad29-72c1ea972a32
+e	java:S108™")Either remove or fill this block of code.(ÂÄ³ŒJ$e6ec970e-c834-41fa-9635-d78327af23f7
+Š	java:S100 "NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğÀ¢”J$f63128e9-f282-4c1a-93ed-4b6bf1c09125
+j	java:S108¤")Either remove or fill this block of code.(£ê®êşÿÿÿÿJ$92ccfee6-7720-4b5b-9a8b-7a6823f02f74
+e	java:S108ª")Either remove or fill this block of code.(õî±ÚJ$0736fc87-aa0c-47d0-ab6a-0c5178df7bb5
+	java:S100·"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶»·ÇøÿÿÿÿJ$be752ae5-af68-460c-a975-7eac555ed505
+j	java:S108½")Either remove or fill this block of code.(£ê®êşÿÿÿÿJ$c3ee866f-7523-418b-9b93-78a7686f388f
+j	java:S108Ã")Either remove or fill this block of code.(£Ï…ÁÿÿÿÿÿJ$7a3567c0-d3cd-4768-95cc-a306dc1750f1
+j	java:S108É")Either remove or fill this block of code.(£Ï…ÁÿÿÿÿÿJ$b5e99a37-2804-4caf-9f42-088ebb24016f
+j	java:S108Ï")Either remove or fill this block of code.(£ê®êşÿÿÿÿJ$45bb17b3-28b6-4ea0-9fe9-13440d95a2f2
+e	java:S108Ô")Either remove or fill this block of code.(©‰ğœJ$ee5dea1e-a453-4f87-a727-aab941e68d50
+e	java:S108Ù")Either remove or fill this block of code.(©‰ğœJ$45c1697e-b443-4225-9bd6-4c506d1de987
+	java:S100á"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆùØÂùÿÿÿÿJ$d9a6d320-5f06-462b-ba11-12fdca197813
+j	java:S108ï")Either remove or fill this block of code.(Æ¸Û‚øÿÿÿÿJ$3b90e7ce-a89f-4ddf-9824-cc5c0bca9ade
+Š	java:S100ö"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªÖºóJ$23d9eab6-def2-45b2-a8da-b4007c3cc9d3
+j	java:S108ƒ")Either remove or fill this block of code.(Æ¸Û‚øÿÿÿÿJ$7e0ea4a5-b657-493a-8242-784dff795f04
+	java:S100‰"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚ª¨“ıÿÿÿÿJ$a6e18798-e3c1-4e71-9245-3610c9879f2a
+j	java:S108")Either remove or fill this block of code.(£ê®êşÿÿÿÿJ$d04eab8f-712d-44f9-9f56-a7fa35710dcb
