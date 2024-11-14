@@ -421,10 +421,10 @@ public class CoordinateAPI implements ILuaAPI {
         BlockPos startBlockPos = new BlockPos((int) (Math.floor(cmap.get("x")) + scope), (int) (Math.floor(cmap.get("y")) + scope), (int) (Math.floor(cmap.get("z")) + scope));
         BlockPos endBlockPos = new BlockPos((int) (cmap.get("x") - scope), (int) (Math.floor(cmap.get("y")) - scope), (int) (Math.floor(cmap.get("z")) - scope));
         AABB aabb = new AABB(startBlockPos, endBlockPos);
-        Map<String, Object> result = new HashMap<>();
         Map<String,Map<String,Object>> map = new HashMap<>();
         this.level.getServer().getLevel(this.level.dimension()).getEntities().getAll().iterator().forEachRemaining(entity -> {
             if (entity instanceof Monster && entity.isAlive() && aabb.contains(entity.getX(), entity.getY(), entity.getZ())) {
+                Map<String, Object> result = new HashMap<>();
                 Monster monster = (Monster) entity;
                 result.put("uuid", monster.getUUID().toString());
                 result.put("name", monster.getName().getString());
@@ -440,6 +440,7 @@ public class CoordinateAPI implements ILuaAPI {
         });
         return map;
     }
+
 
     @LuaFunction
     public final void scanTopography(int x, int z, int x2, int z2) {
