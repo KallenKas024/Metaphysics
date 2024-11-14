@@ -3,6 +3,8 @@ package com.example.cryptography;
 import com.google.gson.Gson;
 import dan200.computercraft.api.lua.ILuaAPI;
 import dan200.computercraft.api.lua.LuaFunction;
+import dan200.computercraft.client.render.ItemMapLikeRenderer;
+import dan200.computercraft.core.computer.Computer;
 import dan200.computercraft.core.computer.mainthread.MainThread;
 import dan200.computercraft.core.computer.mainthread.MainThreadScheduler;
 import dan200.computercraft.shared.computer.core.ServerComputer;
@@ -10,14 +12,20 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.*;
+import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.entity.monster.Zombie;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LightLayer;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.chunk.LevelChunk;
 import net.minecraft.world.level.entity.LevelEntityGetter;
+import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
+import net.minecraftforge.common.util.ItemStackMap;
 import net.minecraftforge.server.ServerLifecycleHooks;
 import org.jetbrains.annotations.NotNull;
 import org.joml.Vector3d;
@@ -29,24 +37,28 @@ import org.valkyrienskies.core.api.ships.Ship;
 import org.valkyrienskies.core.impl.shadow.B;
 import org.valkyrienskies.mod.common.VSGameUtilsKt;
 import java.util.*;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.BiConsumer;
 import java.util.stream.IntStream;
 
 import static com.example.cryptography.Cryptography.ComputerPosMapper;
 
 public class CoordinateAPI implements ILuaAPI {
-
     private BlockPos pos;
     private final int id;
     private final Level level;
-    private final ServerComputer serverComputerSelf;
     public Map<Map<String, Integer>, Map<String, Object>> tmpMap;
-
-    public CoordinateAPI(BlockPos pos, int id, Level level, ServerComputer serverComputerSelf) {
+    private Computer computer;
+    private Thread t = null;
+    public CoordinateAPI(BlockPos pos, int id, Level level, Computer computer) {
         this.pos = pos;
         this.id = id;
         this.level = level;
-        this.serverComputerSelf = serverComputerSelf;
+        this.computer = computer;
     }
 
     @Override
@@ -354,29 +366,120 @@ public class CoordinateAPI implements ILuaAPI {
     }
 
     @LuaFunction
-    public final Map<Integer, Map<String, Object>> getBlockMatrix3D(int start_x, int start_y, int start_z, int end_x, int end_y, int end_z) {
-        Map<Integer, Map<String, Object>> map = new HashMap<>();
-        int cost = 0;
-        for (int i = start_x; i < end_x; i++) {
-            cost += 1;
-            for (int j = start_y; j < end_y; j++) {
-                cost += 1;
-                for (int k = start_z; k < end_z; k++) {
-                    cost += 1;
-                    BlockPos pos = new BlockPos(i, j, k);
-                    BlockState state = level.getBlockState(pos);
-                    Map<String, Object> re = new HashMap<>();
-                    Map<String, Integer> imap = new HashMap<>();
-                    imap.put("x", pos.getX());
-                    imap.put("y", pos.getY());
-                    imap.put("z", pos.getZ());
-                    re.put("coordinate", imap);
-                    re.put("namespace", state.getBlock().getDescriptionId());
-                    map.put(cost, re);
+    public final @NotNull Map<String, Object> getPlayers(){
+        List<ServerPlayer> players = level.getServer().getLevel(level.dimension()).getPlayers(LivingEntity::isAlive);
+        Map<String, Object> result = new HashMap<>();
+        players.forEach((e) -> {
+            Map<Object, Object> map = new HashMap<>();
+            map.put("x", e.getX());
+            map.put("y", e.getY());
+            map.put("z", e.getZ());
+            map.put("name", e.getDisplayName().getString());
+            String uuid = e.getUUID().toString();
+            map.put("uuid", uuid);
+            map.put("eyeHeight", e.getEyeHeight());
+            Map<String, Object> viewVector = new HashMap<>();
+            viewVector.put("x", e.getLookAngle().x);
+            viewVector.put("y", e.getLookAngle().y);
+            viewVector.put("z", e.getLookAngle().z);
+            map.put("viewVector", viewVector);
+            map.put("pose", e.getPose().toString());
+            map.put("isPassenger", e.isPassenger());
+            result.put(uuid, map);
+        });
+        return result;
+    }
+
+    @LuaFunction
+    public final Map<Integer[], Integer> getMapColor(int x, int z, int x2, int z2) {
+        Map<Integer[], Integer> map = new ConcurrentHashMap<>();
+        ExecutorService executor = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
+        List<CompletableFuture<Void>> futures = new ArrayList<>();
+        for (int i = x; i <= x2; i++) {
+            for (int j = z; j <= z2; j++) {
+                int k = this.level.getHeight(Heightmap.Types.WORLD_SURFACE, i, j);
+                int finalI = i;
+                int finalJ = j;
+                futures.add(CompletableFuture.runAsync(() -> processCoordinate(finalI, finalJ, k, map), executor));
+                if (futures.size() >= 10) {
+                    CompletableFuture.allOf(futures.toArray(new CompletableFuture[0])).join();
+                    futures.clear();
                 }
             }
         }
+        CompletableFuture.allOf(futures.toArray(new CompletableFuture[0])).join();
+        executor.shutdown();
         return map;
+    }
+    private void processCoordinate(int x, int z, int k, Map<Integer[], Integer> map) {
+        int color = level.getBlockState(new BlockPos(x, k, z)).getMapColor(level, new BlockPos(x, k, z)).col;
+        map.put(new Integer[]{x, k, z}, color);
+    }
+    @LuaFunction
+    public final Map<String, Map<String, Object>> getMonster(int scope) {
+        Map<String, Double> cmap = getCoordinate();
+        BlockPos startBlockPos = new BlockPos((int) (Math.floor(cmap.get("x")) + scope), (int) (Math.floor(cmap.get("y")) + scope), (int) (Math.floor(cmap.get("z")) + scope));
+        BlockPos endBlockPos = new BlockPos((int) (cmap.get("x") - scope), (int) (Math.floor(cmap.get("y")) - scope), (int) (Math.floor(cmap.get("z")) - scope));
+        AABB aabb = new AABB(startBlockPos, endBlockPos);
+        Map<String, Object> result = new HashMap<>();
+        Map<String,Map<String,Object>> map = new HashMap<>();
+        this.level.getServer().getLevel(this.level.dimension()).getEntities().getAll().iterator().forEachRemaining(entity -> {
+            if (entity instanceof Monster && entity.isAlive() && aabb.contains(entity.getX(), entity.getY(), entity.getZ())) {
+                Monster monster = (Monster) entity;
+                result.put("uuid", monster.getUUID().toString());
+                result.put("name", monster.getName().getString());
+                result.put("displayName", monster.getDisplayName().getString());
+                result.put("x", monster.getX());
+                result.put("y", monster.getY());
+                result.put("z", monster.getZ());
+                result.put("health", monster.getHealth());
+                result.put("maxHealth", monster.getMaxHealth());
+                result.put("armor", monster.getArmorValue());
+                map.put(monster.getUUID().toString(), result);
+            }
+        });
+        return map;
+    }
+
+    @LuaFunction
+    public final void scanTopography(int x, int z, int x2, int z2) {
+        int minX = Math.min(x, x2);
+        int maxX = Math.max(x, x2);
+        int minZ = Math.min(z, z2);
+        int maxZ = Math.max(z, z2);
+
+        if (computer != null) {
+            ArrayList<Integer[]> resultList = new ArrayList<>();
+            if (maxX - minX > 256 || maxZ - minZ > 256) {
+                computer.queueEvent("ComputerScanTopographyDone", new Object[]{resultList});
+            }
+            for (int sx = minX; sx < maxX; sx += 16) {
+                for (int sz = minZ; sz < maxZ; sz += 16) {
+                    LevelChunk chunk = level.getChunkAt(new BlockPos(sx, 64, sz));
+                    int adjust_x = sx - (sx % 16);
+                    adjust_x = adjust_x < 0 ? adjust_x - 16 : adjust_x;
+                    int adjust_z = sz - (sz % 16);
+                    adjust_z = adjust_z < 0 ? adjust_z - 16 : adjust_z;
+
+                    for (int ix = 0; ix < 16; ix++) {
+                        for (int iz = 0; iz < 16; iz++) {
+                            int final_x = adjust_x + ix;
+                            int final_z = adjust_z + iz;
+
+                            if (final_x < maxX && final_z < maxZ) {
+                                int height = chunk.getHeight(Heightmap.Types.MOTION_BLOCKING, ix, iz);
+                                Integer[] pos = new Integer[3];
+                                pos[0] = final_x;
+                                pos[1] = height;
+                                pos[2] = final_z;
+                                resultList.add(pos);
+                            }
+                        }
+                    }
+                }
+            }
+            computer.queueEvent("ComputerScanTopographyDone", new Object[]{resultList});
+        }
     }
 }
 
