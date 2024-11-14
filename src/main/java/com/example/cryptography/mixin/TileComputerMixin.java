@@ -1,8 +1,8 @@
 package com.example.cryptography.mixin;
 
-import com.example.cryptography.CoordinateAPI;
-import com.example.cryptography.CryptographyAPI;
-import com.example.cryptography.Database;
+import com.example.cryptography.Apis.CoordinateAPI;
+import com.example.cryptography.Apis.CryptographyAPI;
+import com.example.cryptography.Apis.DatabaseAPI;
 import dan200.computercraft.core.computer.Computer;
 import dan200.computercraft.shared.computer.core.ComputerFamily;
 import dan200.computercraft.shared.computer.core.ServerComputer;
@@ -33,6 +33,6 @@ public abstract class TileComputerMixin {
         ComputerPosMapper.put(computerID, pos);
         computer.addApi(new CryptographyAPI());
         computer.addApi(new CoordinateAPI(ComputerPosMapper.get(computerID), computerID, level, computer));
-        computer.addApi(new Database(computerID, level));
+        computer.addApi(new DatabaseAPI(computerID, level));
     }
 }

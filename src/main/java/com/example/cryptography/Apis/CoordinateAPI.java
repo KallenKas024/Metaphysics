@@ -1,31 +1,22 @@
-package com.example.cryptography;
+package com.example.cryptography.Apis;
 
-import com.google.gson.Gson;
+import com.example.cryptography.Cryptography;
 import dan200.computercraft.api.lua.ILuaAPI;
 import dan200.computercraft.api.lua.LuaFunction;
-import dan200.computercraft.client.render.ItemMapLikeRenderer;
 import dan200.computercraft.core.computer.Computer;
-import dan200.computercraft.core.computer.mainthread.MainThread;
-import dan200.computercraft.core.computer.mainthread.MainThreadScheduler;
-import dan200.computercraft.shared.computer.core.ServerComputer;
-import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.entity.monster.Zombie;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.LightLayer;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.chunk.LevelChunk;
 import net.minecraft.world.level.entity.LevelEntityGetter;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
-import net.minecraftforge.common.util.ItemStackMap;
-import net.minecraftforge.server.ServerLifecycleHooks;
 import org.jetbrains.annotations.NotNull;
 import org.joml.Vector3d;
 import org.joml.primitives.AABBdc;
@@ -33,16 +24,11 @@ import org.joml.primitives.AABBic;
 import org.valkyrienskies.core.api.ships.QueryableShipData;
 import org.valkyrienskies.core.api.ships.ServerShip;
 import org.valkyrienskies.core.api.ships.Ship;
-import org.valkyrienskies.core.impl.shadow.B;
 import org.valkyrienskies.mod.common.VSGameUtilsKt;
 import java.util.*;
-import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.function.BiConsumer;
-import java.util.stream.IntStream;
 
 import static com.example.cryptography.Cryptography.ComputerPosMapper;
 
@@ -393,22 +379,29 @@ public class CoordinateAPI implements ILuaAPI {
     @LuaFunction
     public final Map<Integer[], Integer> getMapColor(int x, int z, int x2, int z2) {
         Map<Integer[], Integer> map = new ConcurrentHashMap<>();
-        ExecutorService executor = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
-        List<CompletableFuture<Void>> futures = new ArrayList<>();
-        for (int i = x; i <= x2; i++) {
-            for (int j = z; j <= z2; j++) {
-                int k = this.level.getHeight(Heightmap.Types.WORLD_SURFACE, i, j);
-                int finalI = i;
-                int finalJ = j;
-                futures.add(CompletableFuture.runAsync(() -> processCoordinate(finalI, finalJ, k, map), executor));
-                if (futures.size() >= 10) {
-                    CompletableFuture.allOf(futures.toArray(new CompletableFuture[0])).join();
-                    futures.clear();
+        if(computer != null) {
+            for (int i = x; i < x2; i+=16) {
+                for (int j = z; j < z2; j+=16) {
+                    LevelChunk chunk = level.getChunkAt(new BlockPos(i, 64, j));
+                    int tx = i - (i % 16);
+                    int tz = j - (j % 16);
+                    for (int k = 0; k < 16; k++) {
+                        for (int l = 0; l < 16; l++) {
+                            int fixX = tx + k;
+                            int fixZ = tz + l;
+                            fixX = fixX < 0 ? fixX - 16 : fixX;
+                            fixZ = fixZ < 0 ? fixZ - 16 : fixZ;
+                            if (fixX < x2 && fixZ < z2) {
+                                int height = chunk.getHeight(Heightmap.Types.MOTION_BLOCKING, k, l);
+                                BlockState blockState = level.getBlockState(new BlockPos(fixX, height, fixZ));
+                                int color = blockState.getMapColor(level, pos).col;
+                                map.put(new Integer[]{fixX, height, fixZ}, color);
+                            }
+                        }
+                    }
                 }
             }
         }
-        CompletableFuture.allOf(futures.toArray(new CompletableFuture[0])).join();
-        executor.shutdown();
         return map;
     }
     private void processCoordinate(int x, int z, int k, Map<Integer[], Integer> map) {
@@ -416,10 +409,10 @@ public class CoordinateAPI implements ILuaAPI {
         map.put(new Integer[]{x, k, z}, color);
     }
     @LuaFunction
-    public final void scanTopography(int x, int z, int x2, int z2, boolean isUnderSurface) {
+    public final void scanTopography(int x, int z, int x2, int z2) {
         ExecutorService fixedThreadPool = Executors.newFixedThreadPool(1);
         fixedThreadPool.execute(
-            new Scan(x, z, x2, z2, this.level, this.computer, isUnderSurface)
+            new Scan(x, z, x2, z2, this.level, this.computer)
         );
         fixedThreadPool.shutdown();
     }
@@ -447,62 +440,47 @@ public class CoordinateAPI implements ILuaAPI {
     }
 }
 class Scan implements Runnable {
-    private int x;
-    private int z;
-    private int x2;
-    private int z2;
-    private Level level;
-    private Computer computer;
-    private boolean isUnderSurface;
-    public Scan(int x, int z, int x2, int z2, Level level, Computer computer, boolean underSurface) {
+    private final int x;
+    private final int z;
+    private final int x2;
+    private final int z2;
+    private final Level level;
+    private final Computer computer;
+
+    public Scan(int x, int z, int x2, int z2, Level level, Computer computer) {
         this.x = x;
         this.z = z;
         this.x2 = x2;
         this.z2 = z2;
         this.level = level;
         this.computer = computer;
-        this.isUnderSurface = underSurface;
     }
+
     @Override
     public void run() {
         int minX = Math.min(x, x2);
         int minZ = Math.min(z, z2);
         int maxX = Math.max(x, x2) + 1;
         int maxZ = Math.max(z, z2) + 1;
-        AtomicInteger maxY = new AtomicInteger(Integer.MIN_VALUE);
-        AtomicInteger minY = new AtomicInteger(Integer.MAX_VALUE);
-        AtomicInteger finalMinY1 = minY;
-        IntStream.rangeClosed(minX, maxX - 1).parallel().forEach(ix -> {
-            IntStream.rangeClosed(minZ, maxZ - 1).parallel().forEach(iz -> {
-                int height = level.getHeight(Heightmap.Types.WORLD_SURFACE, ix, iz);
-                maxY.getAndUpdate(currentMax -> Math.max(currentMax, height));
-                finalMinY1.getAndUpdate(currentMin -> Math.min(currentMin, height));
-            });
-        });
-        if (isUnderSurface) {
-            minY = new AtomicInteger(-64);
-        }
-        int sizeX = maxX - minX;
-        int sizeY = maxY.get() - minY.get();
-        int sizeZ = maxZ - minZ;
-        Map<Map<String, Integer>, Integer> map = new HashMap<>();
-        AtomicInteger finalMinY = minY;
-        IntStream.rangeClosed(0, sizeX - 1).parallel().forEach(ox -> {
-            IntStream.rangeClosed(0, sizeZ - 1).parallel().forEach(oz -> {
-                for (int oy = 0; oy < sizeY; oy++) {
-                    int ix = ox + minX;
-                    int iz = oz + minZ;
-                    int iy = oy + finalMinY.get();
-                    Map<String,Integer> map2 = new ConcurrentHashMap<>();
-                    map2.put("x", ix);
-                    map2.put("y", iy);
-                    map2.put("z", iz);
-                    map.put(map2, this.level.getBlockState(new BlockPos(ix, iy, iz)).isAir() ? 0 : 1);
+        for (int ix = minX; ix < maxX; ix += 16) {
+            Map<Map<String, Integer>, Integer> map = new HashMap<>();
+            for (int iz = minZ; iz < maxZ; iz += 16) {
+                int height = level.getChunkAt(new BlockPos(ix, 64, iz)).getHeight(Heightmap.Types.MOTION_BLOCKING, ix, iz);
+                for (int ox = 0; ox < 16; ox++) {
+                    for (int oz = 0; oz < 16; oz++) {
+                        for (int oy = -64; oy < height; oy++) {
+                            Map<String, Integer> map2 = new HashMap<>();
+                            map2.put("x", ox);
+                            map2.put("y", oy);
+                            map2.put("z", oz);
+                            map.put(map2, level.getBlockState(new BlockPos(ox, oy, oz)).isAir() ? 0 : 1);
+                        }
+                    }
                 }
-            });
-        });
-        if (computer != null) {
-            computer.queueEvent("ComputerScanTopographyDone", new Object[]{map});
+            }
+            if (computer != null) {
+                computer.queueEvent("ComputerScanTopographyDone", new Object[]{map});
+            }
         }
     }
 }

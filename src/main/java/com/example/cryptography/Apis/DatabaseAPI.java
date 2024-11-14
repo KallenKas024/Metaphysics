@@ -1,9 +1,7 @@
-package com.example.cryptography;
+package com.example.cryptography.Apis;
 
 import dan200.computercraft.api.lua.ILuaAPI;
 import dan200.computercraft.api.lua.LuaFunction;
-import net.minecraft.client.Minecraft;
-import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.storage.LevelResource;
 import org.jetbrains.annotations.NotNull;
@@ -21,13 +19,13 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 
-public class Database implements ILuaAPI {
+public class DatabaseAPI implements ILuaAPI {
 
     public static Map<String, Connection> ComputerConnectionMapper = new HashMap<>();
     private int id;
     private ServerLevel level;
 
-    public Database(int id, ServerLevel serverLevel) {
+    public DatabaseAPI(int id, ServerLevel serverLevel) {
         this.id = id;
         this.level = serverLevel;
     }

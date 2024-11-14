@@ -1,0 +1,9 @@
+
+\
+java:S1118":Add a private constructor to hide the implicit public one.(½à…©ÿÿÿÿÿ8Á×¥×²2
+L
+java:S1656"/Remove or correct this useless self-assignment.(ó†…æ8Á×¥×²2
+d
+java:S1854"BRemove this useless assignment to local variable "lookupProvider".(ïûòşÿÿÿÿ8Á×¥×²2
+U
+java:S1481"3Remove this unused "lookupProvider" local variable.(ïûòşÿÿÿÿ8Á×¥×²2

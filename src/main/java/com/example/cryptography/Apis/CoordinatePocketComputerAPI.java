@@ -1,4 +1,4 @@
-package com.example.cryptography;
+package com.example.cryptography.Apis;
 
 import dan200.computercraft.api.lua.ILuaAPI;
 import dan200.computercraft.api.lua.LuaFunction;

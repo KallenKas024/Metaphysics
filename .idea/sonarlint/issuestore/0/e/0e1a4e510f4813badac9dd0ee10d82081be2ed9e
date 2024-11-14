@@ -1,0 +1,10 @@
+
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ž™ Ü8ÊÌÝÖ²2J$92a93bfa-add1-475a-b77a-1347842c2ef0
+}
+java:S1118":Add a private constructor to hide the implicit public one.(óÚ…ý8ËÌÝÖ²2J$0b93737d-172f-405a-af32-31b3d9f9d093
+o
+java:S1602",Remove useless curly braces around statement(¥ÏÒ³8ÕÌÝÖ²2J$c861d021-4fc0-4f14-be53-522f882e4869
+i
+java:S14528"&Remove usage of generic wildcard type.(ñ˜·´8Ã‘‡Ø²2J$2665d9c2-d020-454f-b836-31beb8edf87e
+p
+java:S1068"-Remove this unused "FIRST_TAB" private field.(¥ÏÒ³8ÕÌÝÖ²2J$8660de66-4c17-42db-81ac-b2cecf1b4a28

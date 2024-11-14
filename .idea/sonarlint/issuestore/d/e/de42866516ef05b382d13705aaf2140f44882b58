@@ -1,0 +1,29 @@
+
+
+java:S1192D"LDefine a constant instead of duplicating this literal "false value" 3 times.(ÈõA8ˆÉËÿ±2J$6dc2ddfa-af1a-439f-9e95-d6f9f58a61da
+“	java:S117I"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô±‡Ñ8Æˆ´ÿ±2J$8b01fd31-55b7-47b1-bc89-88d34317e2d8
+“	java:S117I"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô±‡Ñ8Æˆ´ÿ±2J$6860e3f2-0695-43a1-9022-27d834fd791a
+“	java:S117I"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô±‡Ñ8Æˆ´ÿ±2J$7c38101b-baac-4b79-90f8-b160eced23b4
+§
+java:S1104"dMake ComputerConnectionMapper a static final constant or non-public and provide accessors if needed.(íäáÕ8Çˆ´ÿ±2J$67b15a34-4f2d-49b5-b708-d3a9efdf058b
+
+java:S1444">Make this "public static ComputerConnectionMapper" field final(íäáÕ8Çˆ´ÿ±2J$1c8d5254-d6a1-47ba-add5-659d8876bd7d
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(“¤ñùÿÿÿÿ8ï¤ëÔ²2J$8729a777-561c-439f-b3f3-8bf8c895aacd
+‹
+java:S2095ƒ"GUse try-with-resources or close this "Statement" in a "finally" clause.(Óçš›8Şˆ´ÿ±2J$42e10dc6-e896-494b-ad77-881616199f6f
+
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(ÿß’‚øÿÿÿÿ8Şˆ´ÿ±2J$592f2fa6-8d97-4bc8-8afa-90ecaa31f77b
+
+java:S2095x"GUse try-with-resources or close this "Statement" in a "finally" clause.(æÄ™üÿÿÿÿ8Şˆ´ÿ±2J$6377bf6e-0156-4b5a-a8e8-e707b395e432
+
+java:S2637B"EThis method's return value is marked "@NotNull" but null is returned.(È²½ôûÿÿÿÿ8ßˆ´ÿ±2J$716764b3-8729-4167-b19f-30c0a1bf3229
+¦
+java:S3008"cRename this field "ComputerConnectionMapper" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íäáÕ8ßˆ´ÿ±2J$70d3a682-2e18-4ba3-9af0-1db2b7e210aa
+`
+java:S2386"Make this member "protected".(íäáÕ8áˆ´ÿ±2J$44da8471-f6b2-4cac-b317-d4b014141268
+r	java:S106."+Replace this use of System.out by a logger.(¬’˜ìûÿÿÿÿ8äˆ´ÿ±2J$ff23d3d6-b390-448a-9ea8-bdbcfdd076a7
+r	java:S1060"+Replace this use of System.out by a logger.(úµ·ˆÿÿÿÿÿ8äˆ´ÿ±2J$9fc2b6b1-f100-4362-8655-908d759b9bd9
+r	java:S1063"+Replace this use of System.out by a logger.(×¸Îûøÿÿÿÿ8åˆ´ÿ±2J$cd06a7dd-770e-4445-98b3-1650e65bb5d3
+p	java:S1088")Either remove or fill this block of code.(¬Àáªøÿÿÿÿ8åˆ´ÿ±2J$4766c90b-98e0-480d-b2e2-3c48505ae3e6
+p	java:S108@")Either remove or fill this block of code.(‡ÇË¸ıÿÿÿÿ8æˆ´ÿ±2J$f36b590f-6b11-4a34-b520-db95f6627555
+	java:S100I"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô±‡Ñ8æˆ´ÿ±2J$288c6d58-34c1-4579-b743-3d7274ad4f30
