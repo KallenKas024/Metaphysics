@@ -126,5 +126,10 @@
       <option name="name" value="maven3" />
       <option name="url" value="https://maven.squiddev.cc/" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="CurseForge" />
+      <option name="name" value="CurseForge" />
+      <option name="url" value="https://minecraft.curseforge.com/api/maven/" />
+    </remote-repository>
   </component>
 </project>

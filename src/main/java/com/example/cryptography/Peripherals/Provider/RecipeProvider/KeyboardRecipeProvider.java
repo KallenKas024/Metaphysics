@@ -1,8 +1,6 @@
 package com.example.cryptography.Peripherals.Provider.RecipeProvider;
 
-import com.example.cryptography.Peripherals.Block.KeyboardBlock;
 import com.example.cryptography.Registrys.RegistryHelper;
-import dan200.computercraft.shared.pocket.items.PocketComputerItem;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.RecipeCategory;
@@ -29,7 +27,5 @@ public class KeyboardRecipeProvider extends RecipeProvider {
                 .define('P', Items.IRON_BLOCK)
                 .unlockedBy(getHasName(RegistryHelper.KEYBOARD_BLOCK_REGISTRY_OBJECT.get()), has(RegistryHelper.KEYBOARD_BLOCK_REGISTRY_OBJECT.get()))
                 .save(pWriter);
-
-
     }
 }

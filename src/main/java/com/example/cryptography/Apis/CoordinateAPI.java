@@ -410,78 +410,76 @@ public class CoordinateAPI implements ILuaAPI {
     }
     @LuaFunction
     public final void scanTopography(int x, int z, int x2, int z2) {
-        ExecutorService fixedThreadPool = Executors.newFixedThreadPool(1);
-        fixedThreadPool.execute(
-            new Scan(x, z, x2, z2, this.level, this.computer)
-        );
-        fixedThreadPool.shutdown();
+        int minX = Math.min(x, x2);
+        int maxX = Math.max(x, x2);
+        int minZ = Math.min(z, z2);
+        int maxZ = Math.max(z, z2);
+
+        if (computer != null) {
+            ArrayList<Integer[]> resultList = new ArrayList<>();
+            if (maxX - minX > 256 || maxZ - minZ > 256) {
+                computer.queueEvent("ComputerScanTopographyDone", new Object[]{resultList});
+            }
+            for (int sx = minX; sx < maxX; sx += 16) {
+                for (int sz = minZ; sz < maxZ; sz += 16) {
+                    LevelChunk chunk = level.getChunkAt(new BlockPos(sx, 64, sz));
+                    int adjust_x = sx - (sx % 16);
+                    adjust_x = adjust_x < 0 ? adjust_x - 16 : adjust_x;
+                    int adjust_z = sz - (sz % 16);
+                    adjust_z = adjust_z < 0 ? adjust_z - 16 : adjust_z;
+
+                    for (int ix = 0; ix < 16; ix++) {
+                        for (int iz = 0; iz < 16; iz++) {
+                            int final_x = adjust_x + ix;
+                            int final_z = adjust_z + iz;
+
+                            if (final_x < maxX && final_z < maxZ) {
+                                int height = chunk.getHeight(Heightmap.Types.MOTION_BLOCKING, ix, iz);
+                                Integer[] pos = new Integer[3];
+                                pos[0] = final_x;
+                                pos[1] = height;
+                                pos[2] = final_z;
+                                resultList.add(pos);
+                            }
+                        }
+                    }
+                }
+            }
+            computer.queueEvent("ComputerScanTopographyDone", new Object[]{resultList});
+        }
     }
+
     @LuaFunction
-    public final Map<String, Map<String, Object>> getMonster(int x, int y, int z, int x2, int y2, int z2) {
-        AABB aabb = new AABB(x,y,z,x2,y2,z2);
-        Map<String, Object> result = new HashMap<>();
+    public final Map<String, Map<String, Object>> getMonster(int scope) {
+        String dimension = level.dimension().location().getPath();
+        Map<String, Double> cmap = getCoordinate();
+        BlockPos startBlockPos = new BlockPos((int) (Math.floor(cmap.get("x")) + scope), (int) (Math.floor(cmap.get("y")) + scope), (int) (Math.floor(cmap.get("z")) + scope));
+        BlockPos endBlockPos = new BlockPos((int) (cmap.get("x") - scope), (int) (Math.floor(cmap.get("y")) - scope), (int) (Math.floor(cmap.get("z")) - scope));
+        AABB aabb = new AABB(startBlockPos, endBlockPos);
         Map<String,Map<String,Object>> map = new HashMap<>();
         this.level.getServer().getLevel(this.level.dimension()).getEntities().getAll().iterator().forEachRemaining(entity -> {
-            if (entity instanceof Monster && entity.isAlive() && aabb.contains(entity.getX(), entity.getY(), entity.getZ())) {
-                Monster monster = (Monster) entity;
-                result.put("uuid", monster.getUUID().toString());
-                result.put("name", monster.getName().getString());
-                result.put("displayName", monster.getDisplayName().getString());
-                result.put("x", monster.getX());
-                result.put("y", monster.getY());
-                result.put("z", monster.getZ());
-                result.put("health", monster.getHealth());
-                result.put("maxHealth", monster.getMaxHealth());
-                result.put("armor", monster.getArmorValue());
-                map.put(monster.getUUID().toString(), result);
+            if ((entity instanceof Monster || entity instanceof FlyingMob || entity.getType() == EntityType.ENDER_DRAGON) && entity.isAlive() && aabb.contains(entity.getX(), entity.getY(), entity.getZ())) {
+                boolean flag = true;
+                if (dimension.equals("overworld")) {
+                    flag = canSeeSky((int) entity.getX(), (int) entity.getY(), (int) entity.getZ());
+                }
+
+                if (flag) {
+                    Map<String, Object> result = new HashMap<>();
+                    LivingEntity monster = (LivingEntity) entity;
+                    result.put("uuid", monster.getUUID().toString());
+                    result.put("name", monster.getName().getString());
+                    result.put("displayName", monster.getDisplayName().getString());
+                    result.put("x", monster.getX());
+                    result.put("y", monster.getY());
+                    result.put("z", monster.getZ());
+                    result.put("health", monster.getHealth());
+                    result.put("maxHealth", monster.getMaxHealth());
+                    result.put("armor", monster.getArmorValue());
+                    map.put(monster.getUUID().toString(), result);
+                }
             }
         });
         return map;
     }
 }
-class Scan implements Runnable {
-    private final int x;
-    private final int z;
-    private final int x2;
-    private final int z2;
-    private final Level level;
-    private final Computer computer;
-
-    public Scan(int x, int z, int x2, int z2, Level level, Computer computer) {
-        this.x = x;
-        this.z = z;
-        this.x2 = x2;
-        this.z2 = z2;
-        this.level = level;
-        this.computer = computer;
-    }
-
-    @Override
-    public void run() {
-        int minX = Math.min(x, x2);
-        int minZ = Math.min(z, z2);
-        int maxX = Math.max(x, x2) + 1;
-        int maxZ = Math.max(z, z2) + 1;
-        for (int ix = minX; ix < maxX; ix += 16) {
-            Map<Map<String, Integer>, Integer> map = new HashMap<>();
-            for (int iz = minZ; iz < maxZ; iz += 16) {
-                int height = level.getChunkAt(new BlockPos(ix, 64, iz)).getHeight(Heightmap.Types.MOTION_BLOCKING, ix, iz);
-                for (int ox = 0; ox < 16; ox++) {
-                    for (int oz = 0; oz < 16; oz++) {
-                        for (int oy = -64; oy < height; oy++) {
-                            Map<String, Integer> map2 = new HashMap<>();
-                            map2.put("x", ox);
-                            map2.put("y", oy);
-                            map2.put("z", oz);
-                            map.put(map2, level.getBlockState(new BlockPos(ox, oy, oz)).isAir() ? 0 : 1);
-                        }
-                    }
-                }
-            }
-            if (computer != null) {
-                computer.queueEvent("ComputerScanTopographyDone", new Object[]{map});
-            }
-        }
-    }
-}
-

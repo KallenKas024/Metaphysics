@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "minecraft:blocks/iron_block",
+    "north": "cryptography:textures/block/keyboard_frames_json",
+    "south": "cryptography:textures/block/keyboard_back",
+    "up": "cryptography:textures/block/keyboard_top",
+    "down": "cryptography:textures/block/keyboard_bottom",
+    "east": "cryptography:textures/block/keyboard_side",
+    "west": "cryptography:textures/block/keyboard_side"
+  }
+}

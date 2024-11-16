@@ -1,9 +1,9 @@
 
-\
-java:S1118":Add a private constructor to hide the implicit public one.(½à…©ÿÿÿÿÿ8Á×¥×²2
-L
-java:S1656"/Remove or correct this useless self-assignment.(ó†…æ8Á×¥×²2
-d
-java:S1854"BRemove this useless assignment to local variable "lookupProvider".(ïûòşÿÿÿÿ8Á×¥×²2
-U
-java:S1481"3Remove this unused "lookupProvider" local variable.(ïûòşÿÿÿÿ8Á×¥×²2
+‚
+java:S1118":Add a private constructor to hide the implicit public one.(½à…©ÿÿÿÿÿ8Á×¥×²2J$4b4bacba-e5f5-4bb7-9c0b-06105498c761
+r
+java:S1656"/Remove or correct this useless self-assignment.(ó†…æ8Á×¥×²2J$bd453ea8-4775-4186-9c40-1dfb0cf67158
+Š
+java:S1854"BRemove this useless assignment to local variable "lookupProvider".(ïûòşÿÿÿÿ8Á×¥×²2J$4691e641-f02e-44fc-826a-9c2bc5e495e2
+{
+java:S1481"3Remove this unused "lookupProvider" local variable.(ïûòşÿÿÿÿ8Á×¥×²2J$36c4bb2b-7fdd-4791-ac6f-d412c429e970

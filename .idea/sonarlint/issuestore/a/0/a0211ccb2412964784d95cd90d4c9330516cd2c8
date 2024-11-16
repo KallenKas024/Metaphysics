@@ -1,0 +1,18 @@
+
+œ
+java:S1104"TMake isUpload a static final constant or non-public and provide accessors if needed.(İ–‹ùÿÿÿÿ8†ìÛ§³2J$ec47b3e1-89ce-414f-9dad-44f59fc939ad
+‘
+java:S1104"NMake ke a static final constant or non-public and provide accessors if needed.(»ú…ñ8†ìÛ§³2J$ef410876-57de-4223-9a3d-9a25258d38b4
+v
+java:S1444".Make this "public static isUpload" field final(İ–‹ùÿÿÿÿ8ˆìÛ§³2J$a17b5fe0-0e50-452d-bd7d-3afd49109ad5
+k
+java:S1444"(Make this "public static ke" field final(»ú…ñ8ˆìÛ§³2J$fbf6cc88-133f-473a-9bf7-d4d41071b81d
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(İàŠ8‰ìÛ§³2J$84e8ead1-f061-4e86-93a4-a792a93294db
+‚
+java:S1118":Add a private constructor to hide the implicit public one.(ÂûÍ©úÿÿÿÿ8’ìÛ§³2J$bc89d291-be95-47bf-a4df-3370950721eb
+w
+java:S1656"/Remove or correct this useless self-assignment.(³ƒòüüÿÿÿÿ8“ìÛ§³2J$86a47160-650c-4c10-83f4-cf49e6f1c15e
+m	java:S106"+Replace this use of System.out by a logger.(¦¾Œä8–ìÛ§³2J$d364aac1-d71f-41d0-ae5b-582c8f78ba99
+m	java:S106"+Replace this use of System.out by a logger.(²„³ƒ8–ìÛ§³2J$8f77a50e-6d24-46e0-bfa0-e74f34fc90aa
+m	java:S106"+Replace this use of System.out by a logger.(¦¾Œä8™ìÛ§³2J$81a61bd0-71b5-4f45-bd6a-aba1da8ee4f9
+m	java:S106!"+Replace this use of System.out by a logger.(²„³ƒ8™ìÛ§³2J$ec44e5a3-32e8-46fe-8cce-2a15f51140e3

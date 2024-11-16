@@ -1,0 +1,13 @@
+
+”	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ğƒÈºşÿÿÿÿ8åÎ…ı²2J$4a67c7fe-8b6a-44b0-8fe1-9fe4f9af03ec
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÕûÙ±üÿÿÿÿ8æÎ…ı²2J$60e747d2-3916-4164-94b5-99f4a8070faf
+r	java:S1062"+Replace this use of System.out by a logger.(Âûö²ÿÿÿÿÿ8óÎ…ı²2J$277cb108-13cd-424d-8449-6d071fab3d79
+m	java:S1065"+Replace this use of System.out by a logger.(®äáÃ8ôÎ…ı²2J$c3ccd132-420e-494c-9484-4f0bd37f22ae
+
+java:S1128"KRemove this unused import 'com.example.cryptography.Network.PacketManager'.(ªİÅö8ôÎ…ı²2J$f20e3db7-9099-46a0-81b8-82142e36dc72
+v
+java:S1128".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8ôÎ…ı²2J$06c3e401-7886-45a3-adcd-57caef7797cb
+r
+java:S1128"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8ôÎ…ı²2J$2777b6c3-18f0-4af5-aa4e-77296ab2aef8
+–
+java:S1128"NRemove this unused import 'com.example.cryptography.Utils.ByteUtils.compress'.(¥èÍÍøÿÿÿÿ8ôÎ…ı²2J$3daf4d63-1f2c-42d2-b5e7-edb6bf4f9be2

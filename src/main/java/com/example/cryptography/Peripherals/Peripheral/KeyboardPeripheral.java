@@ -12,9 +12,7 @@ public class KeyboardPeripheral implements IPeripheral{
     private KeyboardEntity keyboardEntity;
 
     public KeyboardPeripheral(KeyboardEntity keyboardEntity) {
-        if (keyboardEntity == null) {
-            this.keyboardEntity = keyboardEntity;
-        }
+        this.keyboardEntity = keyboardEntity;
     }
 
     @Override
@@ -45,6 +43,4 @@ public class KeyboardPeripheral implements IPeripheral{
         // 当计算机断开连接时调用
         this.keyboardEntity.removeComputer(computer);
     }
-
-
 }

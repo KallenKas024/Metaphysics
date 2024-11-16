@@ -1,2 +1,12 @@
 
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(²›¢İüÿÿÿÿ8Ğ‚†×²2
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(²›¢İüÿÿÿÿ8•ººğ²2J$1a6b0d31-cff0-43fd-a6bc-31238b5e580d
+ˆ
+java:S1128"ERemove this unused import 'net.minecraft.client.renderer.RenderType'.(Ÿ…®†8Ÿººğ²2J$ebf7037c-b8ea-4980-8a74-23c994cb97a6
+™
+java:S1128"QRemove this unused import 'net.minecraft.client.renderer.block.model.BlockModel'.(µ¢‘Ìüÿÿÿÿ8Ÿººğ²2J$8e6657f1-82e9-46f6-94e4-28d27dfa371c
+…
+java:S1128"BRemove this unused import 'net.minecraft.world.level.block.Block'.(Úƒ²‚8Ÿººğ²2J$8ef9b3b2-24bb-4b4b-bb65-c76349168f76
+™
+java:S1128	"QRemove this unused import 'net.minecraft.world.level.block.state.BlockBehaviour'.(±’çıÿÿÿÿ8Ÿººğ²2J$a01d1c97-583c-4026-a965-805cd892c939
+—
+java:S1128"ORemove this unused import 'net.minecraftforge.client.ForgeRenderTypes.getText'.(™øšÂşÿÿÿÿ8Ÿººğ²2J$4bae8a92-d6a1-43cf-9b88-4a21444f57cd

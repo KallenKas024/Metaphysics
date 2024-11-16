@@ -1,0 +1,10 @@
+
+{
+  "flipbook_texture": {
+    "frames": [0, 1, 2, 3, 4, 5, 6, 7]
+    "duration": 20,
+    "type": "horizontal",
+    "interpolate": true,
+    "texture": "cryptography:textures/block/keyboard_frames"
+  }
+}

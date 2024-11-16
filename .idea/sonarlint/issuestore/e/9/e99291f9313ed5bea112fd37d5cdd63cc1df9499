@@ -1,0 +1,9 @@
+
+d
+java:S1643"Use a StringBuilder instead.(à¬„íøÿÿÿÿ8‹æ¶ø²2J$6eee32f5-38b7-4777-b42f-b1edb1505eaf
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(·ŽÍ°J$3fbb6bb7-8bc3-4819-83a5-bbbb88e343f1
+™
+java:S1128"QRemove this unnecessary import: java.lang classes are always implicitly imported.(Š‘…ûýÿÿÿÿ8¦æ¶ø²2J$31ea6d39-7aed-48a1-9c3c-51dec458f102
+¡	java:S115M"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(æË¸Äùÿÿÿÿ8¦æ¶ø²2J$58ee594b-cc3e-4d9a-9129-93488e29ed95
+‚
+java:S1118":Add a private constructor to hide the implicit public one.(ðñÂôøÿÿÿÿ8¨æ¶ø²2J$233271a2-ae7a-43c0-9a0c-bd726ab76ff2
