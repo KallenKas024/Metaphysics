@@ -30,8 +30,8 @@ public class Cryptography {
     public Cryptography() {
         MinecraftForge.EVENT_BUS.register(this);
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
-        RegistryHelper.register(eventBus);
-        eventBus.addListener(this::addCreative);
+        //RegistryHelper.register(eventBus);
+        //eventBus.addListener(this::addCreative);
         this.eventBus = eventBus;
         PacketManager.Init();
     }

@@ -64,28 +64,29 @@ public class KeyboardEntity extends BlockEntity {
                 this.player = player;
                 computers.forEach(c -> c.queueEvent("playerAttach", player.getName().getString()));
                 if (player.level().isClientSide()) {
-                    PacketManager.sendToClient(new SP_Keyboard(this, true), PacketDistributor.ALL.noArg());
+                    //PacketManager.sendToClient(new SP_Keyboard(this, true), PacketDistributor.ALL.noArg());
                 } else {
-                    PacketManager.sendToPlayer(new SP_Keyboard(this, true), player.getServer().getPlayerList().getPlayer(player.getUUID()));
+                    //PacketManager.sendToPlayer(new SP_Keyboard(this, true), player.getServer().getPlayerList().getPlayer(player.getUUID()));
                 }
             } else {
                 if (this.player.getStringUUID().equalsIgnoreCase(player.getStringUUID())) {
                     isListening = false;
                     computers.forEach(c -> c.queueEvent("playerDetach", player.getName().getString()));
                     if (player.level().isClientSide()) {
-                        PacketManager.sendToClient(new SP_Keyboard(this, false), PacketDistributor.ALL.noArg());
+                        //PacketManager.sendToClient(new SP_Keyboard(this, false), PacketDistributor.ALL.noArg());
                     } else {
-                        PacketManager.sendToPlayer(new SP_Keyboard(this, false), player.getServer().getPlayerList().getPlayer(player.getUUID()));
+                        //PacketManager.sendToPlayer(new SP_Keyboard(this, false), player.getServer().getPlayerList().getPlayer(player.getUUID()));
                     }
                 } else if (!Objects.requireNonNull(level.getServer()).getPlayerList().getPlayers().contains(this.player)) {
                     //如果操作中的玩家下线了就重新开启
                     isListening = true;
                     this.player = player;
+                    computers.forEach(c -> c.queueEvent("playerChange", player.getName().getString()));
                     computers.forEach(c -> c.queueEvent("playerAttach", player.getName().getString()));
                     if (player.level().isClientSide()) {
-                        PacketManager.sendToClient(new SP_Keyboard(this, true), PacketDistributor.ALL.noArg());
+                        //PacketManager.sendToClient(new SP_Keyboard(this, true), PacketDistributor.ALL.noArg());
                     } else {
-                        PacketManager.sendToPlayer(new SP_Keyboard(this, true), player.getServer().getPlayerList().getPlayer(player.getUUID()));
+                        //PacketManager.sendToPlayer(new SP_Keyboard(this, true), player.getServer().getPlayerList().getPlayer(player.getUUID()));
                     }
                 }
             }

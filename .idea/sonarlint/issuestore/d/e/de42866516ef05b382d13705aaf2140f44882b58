@@ -11,10 +11,10 @@ java:S1444">Make this "public static ComputerConnectionMapper" field final(νδα
 ΅	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(“¤ρωÿÿÿÿ8ο¤λΤ²2J$8729a777-561c-439f-b3f3-8bf8c895aacd
 ‹
 java:S2095ƒ"GUse try-with-resources or close this "Statement" in a "finally" clause.(Ση›8ή΄ÿ±2J$42e10dc6-e896-494b-ad77-881616199f6f
-
-java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(ÿί’‚ψÿÿÿÿ8ή΄ÿ±2J$592f2fa6-8d97-4bc8-8afa-90ecaa31f77b
 
 java:S2095x"GUse try-with-resources or close this "Statement" in a "finally" clause.(ζΔ™όÿÿÿÿ8ή΄ÿ±2J$6377bf6e-0156-4b5a-a8e8-e707b395e432
+
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(ÿί’‚ψÿÿÿÿ8ή΄ÿ±2J$592f2fa6-8d97-4bc8-8afa-90ecaa31f77b
 
 java:S2637B"EThis method's return value is marked "@NotNull" but null is returned.(Θ²½τϋÿÿÿÿ8ί΄ÿ±2J$716764b3-8729-4167-b19f-30c0a1bf3229
 ¦

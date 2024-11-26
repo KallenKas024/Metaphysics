@@ -1,6 +1,6 @@
 
-	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(»–8¨πΎψ²2J$8d9ba467-bbf2-4a60-9d40-eed1b4a73f9b
+	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(»–8¨πΎψ²2J$9c4705bf-df54-44c8-b9a3-e915bdabd1e5
 
-java:S1201"UEither override Object.equals(Object), or rename the method to prevent any confusion.(Τα™ªϊÿÿÿÿ8ΕπΎψ²2J$2ee0c9f6-be5d-41bf-a291-ab72763cc1cb
+java:S1201"UEither override Object.equals(Object), or rename the method to prevent any confusion.(Τα™ªϊÿÿÿÿ8ΕπΎψ²2J$680e9143-359b-4f24-9bee-1f2c3ad61d53
 ‰
-java:S1126"AReplace this if-then-else statement by a single return statement.(¥«όÿÿÿÿ8ΖπΎψ²2J$1773d235-5989-40ec-9422-487db6d36fc7
+java:S1126"AReplace this if-then-else statement by a single return statement.(¥«όÿÿÿÿ8ΖπΎψ²2J$e2687c5e-60bc-46a6-a195-de0b72f79008

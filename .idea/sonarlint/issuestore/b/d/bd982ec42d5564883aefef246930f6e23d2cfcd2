@@ -1,37 +1,38 @@
 
 ¥
-java:S1104"]Make ComputerPosMapper a static final constant or non-public and provide accessors if needed.(±×ıÊùÿÿÿÿ8É¾§³2J$1b11346c-715f-4808-832e-1238e88497ec
+java:S1104"]Make ComputerPosMapper a static final constant or non-public and provide accessors if needed.(±×ıÊùÿÿÿÿ8É¾§³2J$c6c2d59b-d72b-4a9a-8ddd-f2301ca43d36
 £
-java:S1104"`Make ComputerStatusMapper a static final constant or non-public and provide accessors if needed.(÷äœ‘8É¾§³2J$17ab91c6-c8d4-43ae-8ee2-2d362dc9b6a9
+java:S1104"`Make ComputerStatusMapper a static final constant or non-public and provide accessors if needed.(÷äœ‘8É¾§³2J$e8fc3371-b142-445d-8dac-0decdd39c4e8
 —
-java:S1104"TMake eventBus a static final constant or non-public and provide accessors if needed.(Ëª¹‘8É¾§³2J$c1a5e36c-2c47-45f8-bebd-ddcddb2a93b1
+java:S1104"TMake eventBus a static final constant or non-public and provide accessors if needed.(Ëª¹‘8É¾§³2J$197ab225-54d8-423f-9cf2-d21fd6df02ba
 
-java:S1444"7Make this "public static ComputerPosMapper" field final(±×ıÊùÿÿÿÿ8Ê¾§³2J$2c59cb70-febf-4305-8113-75e1c24d733b
+java:S1444"7Make this "public static ComputerPosMapper" field final(±×ıÊùÿÿÿÿ8Ê¾§³2J$d5072a21-8536-44b0-8b01-9c7bb74db8db
 }
-java:S1444":Make this "public static ComputerStatusMapper" field final(÷äœ‘8Ê¾§³2J$ed12c964-691a-4e6d-abf5-de36a6ffdb2c
+java:S1444":Make this "public static ComputerStatusMapper" field final(÷äœ‘8Ê¾§³2J$28119b37-895a-444f-946e-e185366de29b
 q
-java:S1444".Make this "public static eventBus" field final(Ëª¹‘8Ê¾§³2J$da637d34-b965-4ca1-8f0c-f5a0691adf43
-œ	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(†¡ŠÅ8İ¾§³2J$fffa8cea-ac47-4083-866e-fb960a540d34
-œ	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(çÂÎ©8İ¾§³2J$0b83e636-1b32-41c0-943a-06e26f5538d9
+java:S1444".Make this "public static eventBus" field final(Ëª¹‘8Ê¾§³2J$0bf665b2-2723-44be-afb8-70c47010c136
+œ	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(†¡ŠÅ8İ¾§³2J$8d07d50f-9a95-4561-b278-1cb5e5c0da2a
+œ	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(çÂÎ©8İ¾§³2J$73fe97ec-c910-4fd8-b0a6-7c7014f88b1b
 ¤
-java:S3008"\Rename this field "ComputerPosMapper" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±×ıÊùÿÿÿÿ8İ¾§³2J$31d6cfb0-0c2e-4011-821f-56561149e137
+java:S3008"\Rename this field "ComputerPosMapper" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±×ıÊùÿÿÿÿ8İ¾§³2J$c4396070-aa3a-4092-a8cb-1733d75f705e
 ¢
-java:S3008"_Rename this field "ComputerStatusMapper" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷äœ‘8İ¾§³2J$32962c67-fe41-4063-ac27-39c0481a404e
+java:S3008"_Rename this field "ComputerStatusMapper" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷äœ‘8İ¾§³2J$6d9fc6dc-df5f-46bd-b183-0311c5104a03
 e
-java:S2386"Make this member "protected".(±×ıÊùÿÿÿÿ8Ş¾§³2J$34d386e2-5740-4443-95eb-7c29343829ad
+java:S2386"Make this member "protected".(±×ıÊùÿÿÿÿ8Ş¾§³2J$9425d256-294f-4758-a4c7-68e671545988
 `
-java:S2386"Make this member "protected".(÷äœ‘8Ş¾§³2J$5a4033f2-60c6-4ed4-89de-fba39fcfd9e2
+java:S2386"Make this member "protected".(÷äœ‘8Ş¾§³2J$a5766d53-6573-4159-8c4d-714e29c896f9
 m
-java:S3010#"%Remove this assignment of "eventBus".(Ã†®£ùÿÿÿÿ8ã¾§³2J$7d61990c-ecf2-4e8f-b981-18116de3dc21
+java:S3010#"%Remove this assignment of "eventBus".(Ã†®£ùÿÿÿÿ8ã¾§³2J$9aaccacc-2533-44e3-8362-f300e756e1c0
 
-java:S1117 "<Rename "eventBus" which hides the field declared at line 28.(¨×É–8ã¾§³2J$a8eb7555-f6d2-4534-8fd4-cc17430e03e0
+java:S1117 "<Rename "eventBus" which hides the field declared at line 28.(¨×É–8ã¾§³2J$a9f46d34-16d3-450e-af75-25c546a7874d
 }
-java:S2209#"5Change this instance-reference to a static reference.(Ã†®£ùÿÿÿÿ8ä¾§³2J$29a545c9-b25c-4454-af0e-be2db2998bf9
+java:S2209#"5Change this instance-reference to a static reference.(Ã†®£ùÿÿÿÿ8ä¾§³2J$1d0cf941-9664-416b-89e2-c09c558ae4c2
+]	java:S125!"<This block of commented-out lines of code should be removed.(ÏŠüúÿÿÿÿ8öí™ˆ¶2
 
-java:S1128"MRemove this unused import 'com.example.cryptography.Handler.KeyInputHandler'.(÷Úï™8æ¾§³2J$26034799-65b5-4622-a27e-4f59bea483d1
+java:S1128"MRemove this unused import 'com.example.cryptography.Handler.KeyInputHandler'.(÷Úï™8æ¾§³2J$c6e5f9d4-9bca-4624-8a0e-6f90fac605f1
 
-java:S1128"URemove this unused import 'com.example.cryptography.Peripherals.Block.KeyboardBlock'.(”‚­Õşÿÿÿÿ8æ¾§³2J$2a1b359b-9643-4b38-9c66-89850b68d7dd
+java:S1128"URemove this unused import 'com.example.cryptography.Peripherals.Block.KeyboardBlock'.(”‚­Õşÿÿÿÿ8æ¾§³2J$02734f96-d054-4708-92ff-2b113086169c
 ~
-java:S1128";Remove this unused import 'net.minecraft.client.Minecraft'.(áìÒÎ8æ¾§³2J$4a478273-3cc5-4282-b827-92e990187477
-]
-java:S1128";Remove this unused import 'net.minecraftforge.fml.ModList'.(ÆŒ°™øÿÿÿÿ8²×ì§³2
+java:S1128";Remove this unused import 'net.minecraft.client.Minecraft'.(áìÒÎ8æ¾§³2J$1c731f85-814e-40d1-b6f1-171304dccac6
+ƒ
+java:S1128";Remove this unused import 'net.minecraftforge.fml.ModList'.(ÆŒ°™øÿÿÿÿ8²×ì§³2J$448ff4de-1cb0-4e85-9ce5-66d1be38f1bb

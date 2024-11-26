@@ -1,10 +1,28 @@
 
 w
-java:S3740"/Provide the parametrized type for this generic.(Ô€Òÿÿÿÿÿ8Îİû²2J$806db6ec-60e9-4ba1-97bc-64f201798607
+java:S3740"/Provide the parametrized type for this generic.(Ô€Òÿÿÿÿÿ8Îİû²2J$6ff140b4-739b-4975-b8ce-5750864f41fd
 ™
-java:S1104"VMake peripheral a static final constant or non-public and provide accessors if needed.(éì—8Ïİû²2J$a5ea2660-ac36-4451-93da-f0a2222db673
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÁÏŞÆùÿÿÿÿ8Ğİû²2J$33deee65-ff2e-4775-a9ab-972caf6f48f2
+java:S1104"VMake peripheral a static final constant or non-public and provide accessors if needed.(éì—8Ïİû²2J$c9b3920c-bfff-420c-bb45-d3c96128f979
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÁÏŞÆùÿÿÿÿ8Ğİû²2J$1cf8cdde-9635-4888-841f-1bb8f68df6cb
 œ
-java:S1845%"YRename method "peripheral" to prevent any misunderstanding/clash with field "peripheral".(İßË¾8êİû²2J$750eed1f-90f1-48e8-ac65-785d6ccc29e5
+java:S1845%"YRename method "peripheral" to prevent any misunderstanding/clash with field "peripheral".(İßË¾8êİû²2J$cb3fde10-0d86-4263-aa2c-dff89e861769
 •
-java:S3776<"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(£¼8ñİû²2J$caa7e68d-a41e-4764-a8bd-6dbf27f54ea1
+java:S3776<"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(£¼8ñİû²2J$ba9b65e2-a9d5-4950-9e99-ad56bc9f1ec6
+
+java:S3923B"[Remove this conditional structure or edit its code blocks so that they're not all the same.(¹èğ8â“Ÿëµ2J$3f2138f9-3628-46bb-869c-52fcfa46bccd
+ƒ	java:S125C"<This block of commented-out lines of code should be removed.(ÌˆœÌûÿÿÿÿ8®ÈŸëµ2J$2c7611bc-bd09-4de9-afee-d5a3083e5eba
+ƒ	java:S125E"<This block of commented-out lines of code should be removed.(Û„åĞùÿÿÿÿ8®ÈŸëµ2J$7d2e14f4-5e56-475e-83a7-e4770ff7c690
+
+java:S3923K"[Remove this conditional structure or edit its code blocks so that they're not all the same.(¹èğ8®ÈŸëµ2J$ae81bf56-4517-4f1f-b499-706dc4896c3d
+~	java:S125L"<This block of commented-out lines of code should be removed.(Ãîğñ8ã“Ÿëµ2J$f992402b-f933-4319-b758-2367162fe284
+ƒ	java:S125N"<This block of commented-out lines of code should be removed.(œï¦·úÿÿÿÿ8ã“Ÿëµ2J$6183de62-19b4-4d73-af03-0f168463842f
+w
+java:S3923V"[Remove this conditional structure or edit its code blocks so that they're not all the same.(¹èğ8â‚ ëµ2
+]	java:S125W"<This block of commented-out lines of code should be removed.(ÌˆœÌûÿÿÿÿ8â‚ ëµ2
+]	java:S125Y"<This block of commented-out lines of code should be removed.(Û„åĞùÿÿÿÿ8â‚ ëµ2
+h
+java:S1128"KRemove this unused import 'com.example.cryptography.Network.PacketManager'.(ªİÅö8ã‚ ëµ2
+n
+java:S1128"LRemove this unused import 'com.example.cryptography.Network.SP.SP_Keyboard'.(÷”ë®øÿÿÿÿ8ã‚ ëµ2
+k
+java:S1128"IRemove this unused import 'net.minecraftforge.network.PacketDistributor'.(—¥©úÿÿÿÿ8ã‚ ëµ2

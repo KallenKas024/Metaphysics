@@ -1,0 +1,9 @@
+
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(“¤ñùÿÿÿÿ8Úœ¶»¶2J$9362adb6-6067-40a9-ab0c-28759ff4a46c
+~	java:S1077"<Method has 8 parameters, which is greater than 7 authorized.(»¦ÿš8³Ÿ¶»¶2J$d294b856-66d7-48f3-93c9-6e07fce9cf35
+„
+java:S1126)"AReplace this if-then-else statement by a single return statement.(øüôã8¸Ÿ¶»¶2J$402306bf-27d3-46c3-ac19-4be6d2425fad
+o
+java:S1144"-Remove this unused private "rayTrace" method.(ÕÖé8Ÿ”ÿ»¶2J$aded5ad9-618f-4776-be70-73b02b58b673
+z
+java:S1144$"7Remove this unused private "rayTraceWithEntity" method.(ó‚ö•8Ÿ”ÿ»¶2J$fed17e0b-1c4a-454a-b872-5dd8a9002928

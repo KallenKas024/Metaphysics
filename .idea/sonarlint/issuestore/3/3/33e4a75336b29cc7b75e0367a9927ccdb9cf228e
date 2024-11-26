@@ -1,0 +1,18 @@
+
+
+java:S1192L"JDefine a constant instead of duplicating this literal "namespace" 3 times.(Ãã€Á8ïœÙ¼¶2J$d31bdb2d-2c28-430d-be67-1ce9d6857b22
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(›Âèüÿÿÿÿÿ8ñœÙ¼¶2J$b66b5545-0481-4fbe-b83b-ac6a95f0a2f1
+š
+java:S3008"WRename this field "EntityMapper" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒîù8ôœÙ¼¶2J$9344e75c-939a-40f3-b11f-9d3d79377466
+ƒ	java:S107"<Method has 9 parameters, which is greater than 7 authorized.(¸ŞÀúıÿÿÿÿ8öœÙ¼¶2J$43d19600-3132-40b8-b5b0-4636cbe9a36a
+}
+java:S1118":Add a private constructor to hide the implicit public one.(É÷¥8÷œÙ¼¶2J$ac9e39a1-592a-47db-8e9a-8cd4c0a80b38
+•	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸ŞÀúıÿÿÿÿ8øœÙ¼¶2J$58c0c99b-e372-4b81-9716-d76438ae1cc5
+š
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(¸ŞÀúıÿÿÿÿ8ùœÙ¼¶2J$f4117397-ff04-42e7-b0bd-d766f5649959
+Œ
+java:S3358""DExtract this nested ternary operation into an independent statement.(â€‡Ûÿÿÿÿÿ8üœÙ¼¶2J$4d38d81a-f8ac-496e-b91d-4de02b712651
+
+java:S6201R"GReplace this instanceof check and cast with 'instanceof Player player2'(ÇÄ©şÿÿÿÿ8ƒÙ¼¶2J$2b1a6872-7d44-4ac8-9f02-c65edccf878f
+
+java:S6541"ÅA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 90 to 64, Complexity from 18 to 14, Nesting Level from 4 to 2, Number of Variables from 26 to 6.(¸ŞÀúıÿÿÿÿ8‡Ù¼¶2J$853914b3-b463-4072-88ee-cb4cd588c4a4

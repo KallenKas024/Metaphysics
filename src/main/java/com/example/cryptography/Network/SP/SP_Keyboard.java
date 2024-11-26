@@ -4,6 +4,7 @@ package com.example.cryptography.Network.SP;
 import com.example.cryptography.Handler.KeyInputHandler;
 import com.example.cryptography.Network.PacketManager;
 import com.example.cryptography.Peripherals.BlockEntity.KeyboardEntity;
+import dan200.computercraft.shared.computer.blocks.ComputerBlockEntity;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;
@@ -21,7 +22,7 @@ public class SP_Keyboard {
     public final BlockPos te;
     public final boolean isUpload;
 
-    public SP_Keyboard(KeyboardEntity te, boolean isUpload){
+    public SP_Keyboard(ComputerBlockEntity te, boolean isUpload){
         this.te = te.getBlockPos();
         this.isUpload = isUpload;
     }
@@ -45,12 +46,11 @@ public class SP_Keyboard {
         ctx.setPacketHandled(true);
         ctx.enqueueWork(() -> {
             BlockEntity be = Minecraft.getInstance().level.getBlockEntity(msg.te);
-            if(be instanceof KeyboardEntity te) {
+            if(be instanceof ComputerBlockEntity te) {
                 KeyInputHandler.isUpload = msg.isUpload;
                 System.out.println("KeyInputHandler.isUpload: " + msg.isUpload);
                 if (msg.isUpload) {
                     KeyInputHandler.ke = te;
-                    System.out.println("ComputerIsEmpty: "+KeyInputHandler.ke.computers.isEmpty());
                 } else {
                     KeyInputHandler.ke = null;
                 }

@@ -1,6 +1,9 @@
 package com.example.cryptography.Network.CP;
 
 import com.example.cryptography.Peripherals.BlockEntity.KeyboardEntity;
+import dan200.computercraft.core.computer.Computer;
+import dan200.computercraft.shared.computer.blocks.ComputerBlock;
+import dan200.computercraft.shared.computer.blocks.ComputerBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -8,6 +11,7 @@ import net.minecraftforge.network.NetworkEvent;
 import org.lwjgl.glfw.GLFW;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Supplier;
 
@@ -23,7 +27,7 @@ public class CP_Keyboard {
 
         }
 
-        public CP_Keyboard(KeyboardEntity te, String event, int param){
+        public CP_Keyboard(ComputerBlockEntity te, String event, int param){
             this.te = te.getBlockPos();
             this.name = event;
             this.param = param;
@@ -49,14 +53,13 @@ public class CP_Keyboard {
             ctx.setPacketHandled(true);
             ctx.enqueueWork(() -> {
                 BlockEntity be = context.get().getSender().level().getExistingBlockEntity(msg.te);
-                if(be instanceof KeyboardEntity te){
-                    if(te.peripheral != null){
-                        te.computers.forEach(e -> {
-                            String key = GLFW.glfwGetKeyName(msg.param, GLFW.glfwGetKeyScancode(msg.param));
-                            e.queueEvent(msg.name, key);
-                            System.out.println("queueEvent "+msg.name+" to computer " + e.getID() + " and got param: " + key);
-                        });
-                    }
+                if (be instanceof ComputerBlockEntity te) {
+                    String key = GLFW.glfwGetKeyName(msg.param, GLFW.glfwGetKeyScancode(msg.param));
+                    Map<String, Object> data = new HashMap<>();
+                    data.put("key", key);
+                    data.put("keyCode", msg.param);
+                    te.getServerComputer().queueEvent(msg.name, new Map[]{data});
+                    //System.out.println("queueEvent "+msg.name+" to computer " + e.getID() + " and got param: " + key);
                 }
             });
         }

@@ -1,18 +1,19 @@
 
-w
-java:S10665"/Merge this if statement with the enclosing one.(ƒæ—æùÿÿÿÿ8íÎµ¨³2J$1eec03e3-864a-4ca0-96c0-c360e625db7e
 –
-java:S1104"NMake te a static final constant or non-public and provide accessors if needed.(à¯¤Øüÿÿÿÿ8îÎµ¨³2J$24b70470-de78-469e-8e58-b13951bdb69f
+java:S1104"NMake te a static final constant or non-public and provide accessors if needed.(à¯¤Øüÿÿÿÿ8¾´”ëµ2J$381e501a-8869-4070-b808-60bbb065f20a
 “
-java:S1104"PMake name a static final constant or non-public and provide accessors if needed.( şÍ¾8îÎµ¨³2J$78c6ea31-c10e-4bde-a9f0-5432bddc0297
+java:S1104"PMake name a static final constant or non-public and provide accessors if needed.( şÍ¾8¾´”ëµ2J$5649710d-b26f-4270-aa7c-b1c77e057c8c
 ™
-java:S1104"QMake param a static final constant or non-public and provide accessors if needed.(ºÃš€şÿÿÿÿ8îÎµ¨³2J$6543571b-83c0-4c2d-85fe-f055cb23c7d7
-	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÙŞÆÀ8ïÎµ¨³2J$444167cd-127d-4060-a868-34f983398a5b
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(äê©şÿÿÿÿ8ğÎµ¨³2J$8be5fe00-ea60-4406-8489-1064ccb46b57
-ƒ	java:S125!"<This block of commented-out lines of code should be removed.(åş¥¦üÿÿÿÿ8ùÎµ¨³2J$38919667-7ed9-4ef5-aca3-9f21a1061437
-m	java:S1069"+Replace this use of System.out by a logger.(ÄÜí¦8şÎµ¨³2J$6077bb41-76a1-4a9a-9613-59b6890d2fb7
+java:S1104"QMake param a static final constant or non-public and provide accessors if needed.(ºÃš€şÿÿÿÿ8¾´”ëµ2J$dcaaa856-9fc3-4bfd-aeae-40392863c93a
+	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÙŞÆÀ8¾´”ëµ2J$c394bcab-f9f7-4cf9-a7cc-06a7352c2db0
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(äê©şÿÿÿÿ8¾´”ëµ2J$2457d4d2-f27d-4c2f-b3ca-2ea9e2747476
+ƒ	java:S125%"<This block of commented-out lines of code should be removed.(åş¥¦üÿÿÿÿ8È´”ëµ2J$fa735c8c-d05f-4035-8d15-03fd0b22072b
+~	java:S125>"<This block of commented-out lines of code should be removed.(öäéÿ8Ê´”ëµ2J$f7d0f30c-2685-488b-8b6f-d94fbaee12e5
+y
+java:S1128"\Remove this unused import 'com.example.cryptography.Peripherals.BlockEntity.KeyboardEntity'.(Àµ¶õ8‘ï˜ëµ2
+
+java:S1128"HRemove this unused import 'dan200.computercraft.core.computer.Computer'.(ĞÄ’úüÿÿÿÿ8Ë´”ëµ2J$7b321dfe-f2d3-4bbe-b307-dc55752d3b0b
+
+java:S1128"VRemove this unused import 'dan200.computercraft.shared.computer.blocks.ComputerBlock'.(öÛæõÿÿÿÿÿ8Ë´”ëµ2J$2fa6c8ab-6d4f-44a4-a68d-306d1a0cd32a
 u
-java:S1128
-"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8ÿÎµ¨³2J$fa8fb711-77f5-49e5-94f4-307eb15a2591
-r
-java:S1128"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8ÿÎµ¨³2J$b8237ba3-5a9f-4a48-ba7b-46033b74957e
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8Ë´”ëµ2J$fa1fa6ea-a332-48ba-ba43-384207a4c323

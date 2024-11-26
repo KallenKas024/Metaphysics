@@ -1,39 +1,41 @@
 
-™	java:S117ª"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯²ß˜ûÿÿÿÿ8â‰Ëû²2J$828cd9dc-6a3d-49f2-a785-45c34a5b3e1e
-”	java:S117¬"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°¶Èå8â‰Ëû²2J$2ef833d6-45b2-47da-afd7-3347768cf3d5
-™	java:S117±"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨æ‡üÿÿÿÿ8â‰Ëû²2J$99b1e9e9-4409-43b5-8022-c3f5ca600120
-™	java:S117²"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ããí®ÿÿÿÿÿ8â‰Ëû²2J$00a1a863-3d24-40e4-b7a3-2cea6c8f7729
+™	java:S117ª"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯²ß˜ûÿÿÿÿ8ß‘±æµ2J$5fda470b-a125-4fa1-96a5-a032ab7f1532
+”	java:S117¬"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°¶Èå8à‘±æµ2J$35d05cc1-cd69-4038-9493-07a8dfb0bacf
+™	java:S117±"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨æ‡üÿÿÿÿ8à‘±æµ2J$0b52757d-82c9-4193-b86c-903c1543a746
+™	java:S117²"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ããí®ÿÿÿÿÿ8à‘±æµ2J$a0d64dce-f094-423b-b6d3-6daee35087c5
 •
-java:S1104("RMake tmpMap a static final constant or non-public and provide accessors if needed.(õ÷ëè8ä‰Ëû²2J$0720fe0c-2c32-487b-9688-6197e4d0d2d4
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(“¤ñùÿÿÿÿ8ç‰Ëû²2J$d233273a-8fef-4b69-a764-6d801acbc7e5
+java:S1104("RMake tmpMap a static final constant or non-public and provide accessors if needed.(õ÷ëè8á‘±æµ2J$9ceb3f0b-b0c5-4cee-b298-2b5e6659f1ce
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(“¤ñùÿÿÿÿ8å‘±æµ2J$8a21fa96-1f9e-4627-a949-e004e7fcc461
 w
-java:S1874X"/Remove this use of "isSolid"; it is deprecated.(½§ı×üÿÿÿÿ8Ë‹Ëû²2J$b3ec0675-fa7e-481b-a4c7-e8b403eb2b02
-ƒ	java:S125g"<This block of commented-out lines of code should be removed.(³ªƒøÿÿÿÿ8Ì‹Ëû²2J$54843e8b-d7dc-4ffe-85a8-4cd17364cdaf
+java:S1874X"/Remove this use of "isSolid"; it is deprecated.(½§ı×üÿÿÿÿ8­“±æµ2J$2be700d5-64e1-40e4-9e7b-8941c30838f2
+ƒ	java:S125g"<This block of commented-out lines of code should be removed.(³ªƒøÿÿÿÿ8¯“±æµ2J$421a78d4-4b80-418b-a161-245c60681b3b
 •
-java:S3776r"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(ò´ÕÏ8Î‹Ëû²2J$96ec4b77-9d9c-4598-9158-1c5f70290401
-q	java:S108")Either remove or fill this block of code.(½Ñë×ùÿÿÿÿ8Ó‹Ëû²2J$b4bdfb94-7288-45cb-abe9-494a5f6d4ec1
+java:S3776r"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(ò´ÕÏ8°“±æµ2J$43dc44be-fb82-4546-ade2-941a15ade8e1
+q	java:S108")Either remove or fill this block of code.(½Ñë×ùÿÿÿÿ8´“±æµ2J$f5fed069-d51f-4548-be76-e85a57d0e1e3
 ‰
-java:S6201 "FReplace this instanceof check and cast with 'instanceof Player player'(£äŠj8Õ‹Ëû²2J$1eb2b821-0e2b-4ec3-bb57-44bca3d0b233
+java:S6201 "FReplace this instanceof check and cast with 'instanceof Player player'(£äŠj8¶“±æµ2J$fd296370-7fc9-4a44-b2f3-d8cfec400890
 
-java:S6201À"IReplace this instanceof check and cast with 'instanceof LivingEntity mob'(±Ú¡8Ø‹Ëû²2J$6696013b-da3a-4509-8181-a8fe9f215c3b
+java:S6201À"IReplace this instanceof check and cast with 'instanceof LivingEntity mob'(±Ú¡8¸“±æµ2J$28f38b47-208c-4d23-bfc8-0490f6c8077b
 ‚
-java:S1874Ü">Remove this use of "getExplosionResistance"; it is deprecated.(×‚èù8Ù‹Ëû²2J$b153b124-0e54-4176-bca9-afb530f2e384
-q	java:S108†")Either remove or fill this block of code.(½Ñë×ùÿÿÿÿ8Ş‹Ëû²2J$a61f49a4-ab19-4b3c-94da-ab80a616a3dc
+java:S1874Ü">Remove this use of "getExplosionResistance"; it is deprecated.(×‚èù8º“±æµ2J$317e46ac-cd67-478c-972d-fbbca7e5899b
+q	java:S108†")Either remove or fill this block of code.(½Ñë×ùÿÿÿÿ8½“±æµ2J$b35f27b1-165f-4b40-92c7-fd71b3b667a9
 x
-java:S1611æ"/Remove the parentheses around the "e" parameter(ªµ¹ÿûÿÿÿÿ8å‹Ëû²2J$be2bee41-e323-464d-8299-fedfc273ba76
+java:S1611æ"/Remove the parentheses around the "e" parameter(ªµ¹ÿûÿÿÿÿ8Ä“±æµ2J$1749259c-194b-4a14-91f0-960ef43db86a
 –
-java:S3776ü"RRefactor this method to reduce its Cognitive Complexity from 34 to the 15 allowed.(×ØöË8ç‹Ëû²2J$388e13fc-4729-4c12-a887-0eb3800bc06b
+java:S3776ü"RRefactor this method to reduce its Cognitive Complexity from 34 to the 15 allowed.(×ØöË8Æ“±æµ2J$47220da8-f5b2-4c53-9e33-14cb3749e6aa
 –
-java:S3776œ"RRefactor this method to reduce its Cognitive Complexity from 33 to the 15 allowed.(÷›ëÁ8ê‹Ëû²2J$2db2ea6b-ea9f-40ee-998d-b2bc563fa6ba
+java:S3776œ"RRefactor this method to reduce its Cognitive Complexity from 33 to the 15 allowed.(÷›ëÁ8É“±æµ2J$273b975c-1a5e-445f-824f-915a5eb55a9f
 €
-java:S1117¶"7Rename "pos" which hides the field declared at line 37.(×õÆÊúÿÿÿÿ8í‹Ëû²2J$434eac46-997f-49b4-bcbd-83f6b866d8dd
+java:S1117¶"7Rename "pos" which hides the field declared at line 37.(×õÆÊúÿÿÿÿ8Ë“±æµ2J$701a5656-1cb4-4e99-8d38-7d560d0a4982
+`
+java:S1128"CRemove this unused import 'net.minecraft.world.level.block.Blocks'.(Âü˜8šë±çµ2
 c
-java:S1128"ARemove this unused import 'java.util.concurrent.ExecutorService'.(æ÷–£ùÿÿÿÿ8îÈËû²2
+java:S1128"ARemove this unused import 'java.util.concurrent.ExecutorService'.(æ÷–£ùÿÿÿÿ8šë±çµ2
 ]
-java:S1128";Remove this unused import 'java.util.concurrent.Executors'.(äåÒÛÿÿÿÿÿ8îÈËû²2
+java:S1128";Remove this unused import 'java.util.concurrent.Executors'.(äåÒÛÿÿÿÿÿ8šë±çµ2
 m
-java:S1068*"%Remove this unused "t" private field.(—¹Ô¾şÿÿÿÿ8ò‹Ëû²2J$e21ab87d-8dc2-46f9-915a-bfb17f5b81d6
+java:S1068*"%Remove this unused "t" private field.(—¹Ô¾şÿÿÿÿ8Ò“±æµ2J$c35f4389-2143-4aa6-a2f3-13f555060e9f
 }
-java:S1144µ"4Remove this unused private "getAABBicCenter" method.(ÍÓ¢£úÿÿÿÿ8ó‹Ëû²2J$71d8379f-53f1-45c1-8ad4-f557ab5cb3ef
+java:S1144µ"4Remove this unused private "getAABBicCenter" method.(ÍÓ¢£úÿÿÿÿ8Ò“±æµ2J$bfe38f1b-a7aa-4832-9aec-6aaf15ccf634
 
-java:S1144—"6Remove this unused private "processCoordinate" method.(õÄÕıÿÿÿÿ8ó‹Ëû²2J$45b94b1d-9f49-427e-ac59-620f4aa1af79
+java:S1144—"6Remove this unused private "processCoordinate" method.(õÄÕıÿÿÿÿ8Ò“±æµ2J$cb367cf3-3c34-40c0-b261-ffb57c5cc3d3

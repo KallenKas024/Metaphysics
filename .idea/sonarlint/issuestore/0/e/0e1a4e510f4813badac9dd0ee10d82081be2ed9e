@@ -1,18 +1,19 @@
 
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(™ Ü8û³™ò²2J$19fa7949-37ee-46ba-8daf-905368a4d17e
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(™ Ü8û³™ò²2J$aebdfd97-2b63-47e3-95a6-50afe85a631b
 }
-java:S1118":Add a private constructor to hide the implicit public one.(óÚ…ı8€´™ò²2J$b06055fa-3c0f-48b9-aec9-09bce58bf644
-t
-java:S1602",Remove useless curly braces around statement(Ï„â¾ıÿÿÿÿ8“´™ò²2J$d71805d1-315a-4cf7-8c9c-0750399e6290
+java:S1118":Add a private constructor to hide the implicit public one.(óÚ…ı8€´™ò²2J$eff597d6-e672-47f0-99ca-f47bbc238f5d
+N
+java:S1602",Remove useless curly braces around statement(Ï„â¾ıÿÿÿÿ8Á˜ˆ¶2
 i
-java:S1452<"&Remove usage of generic wildcard type.(ñ˜·´8—´™ò²2J$71d3c4e9-f3ea-44ce-8e2e-7439ccf567fd
-³
-java:S1128"pRemove this unused import 'com.example.cryptography.Peripherals.Provider.RecipeProvider.KeyboardRecipeProvider'.(µá¦Ü8˜´™ò²2J$ca6d0349-5fcf-49e6-8367-5480c88d4963
-~
-java:S1128";Remove this unused import 'net.minecraft.client.Minecraft'.(áìÒÎ8˜´™ò²2J$45dd8416-a793-4d8d-9c52-3c3611424805
-‰
-java:S1128	"ARemove this unused import 'net.minecraft.server.MinecraftServer'.(“Í€Ÿüÿÿÿÿ8˜´™ò²2J$0e6ace1e-82cd-4bfc-9c9c-6a6b1160c9ce
-Ÿ
-java:S1128"WRemove this unused import 'net.minecraft.world.level.block.HorizontalDirectionalBlock'.(®¼©¾ıÿÿÿÿ8˜´™ò²2J$ed24ee4e-33b6-4885-b053-379cafde6a83
-u
-java:S1068"-Remove this unused "FIRST_TAB" private field.(Ï„â¾ıÿÿÿÿ8™´™ò²2J$6105a635-d8ce-4c62-b54b-81cb83813aa1
+java:S1452<"&Remove usage of generic wildcard type.(ñ˜·´8—´™ò²2J$3a1a2f45-9ae8-4b0a-98d0-bd5d3f93c93b
+ƒ	java:S125A"<This block of commented-out lines of code should be removed.(Í“˜ûÿÿÿÿ8÷Ôúêµ2J$427fb494-45b4-42ee-a6c3-e44d6088334b
+
+java:S1128"pRemove this unused import 'com.example.cryptography.Peripherals.Provider.RecipeProvider.KeyboardRecipeProvider'.(µá¦Ü8“Á˜ˆ¶2
+X
+java:S1128";Remove this unused import 'net.minecraft.client.Minecraft'.(áìÒÎ8“Á˜ˆ¶2
+c
+java:S1128	"ARemove this unused import 'net.minecraft.server.MinecraftServer'.(“Í€Ÿüÿÿÿÿ8“Á˜ˆ¶2
+y
+java:S1128"WRemove this unused import 'net.minecraft.world.level.block.HorizontalDirectionalBlock'.(®¼©¾ıÿÿÿÿ8“Á˜ˆ¶2
+O
+java:S1068"-Remove this unused "FIRST_TAB" private field.(Ï„â¾ıÿÿÿÿ8”Á˜ˆ¶2

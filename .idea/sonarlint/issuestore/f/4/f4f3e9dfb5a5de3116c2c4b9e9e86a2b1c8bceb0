@@ -1,6 +1,6 @@
 
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¡Œ‘Àúÿÿÿÿ8›±®÷²2J$ce985159-cd69-4e15-99e1-48618bd9baab
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¡Œ‘Àúÿÿÿÿ8›±®÷²2J$2b318ed2-f6f1-472c-9bfd-e380583310e4
 ’
-java:S1874 "JDon't override a deprecated method or explicitly mark it as "@Deprecated".(¨í›Ûúÿÿÿÿ8£±®÷²2J$118d4c2e-2bb6-4e65-8d34-a781b7a9c5fa
+java:S1874 "JDon't override a deprecated method or explicitly mark it as "@Deprecated".(¨í›Ûúÿÿÿÿ8£±®÷²2J$5d11ea4a-4523-4e65-955b-dc36b321cfc7
 ™
-java:S6201#"VReplace this instanceof check and cast with 'instanceof KeyboardEntity keyboardentity'(ÚÉØÊ8¤±®÷²2J$f435483a-80a1-445d-8f6e-edc90b5f19f1
+java:S6201#"VReplace this instanceof check and cast with 'instanceof KeyboardEntity keyboardentity'(ÚÉØÊ8¤±®÷²2J$4237d1d2-073f-45a7-8c3a-1f859af3657a

@@ -1,0 +1,18 @@
+
+‘	java:S117G"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡»³¦ùÿÿÿÿJ$831b4673-0fdc-459f-876c-93955d2dc475
+Œ	java:S117H"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±†™ÿJ$b207e502-d32c-4ced-a9f2-ebad88491177
+‘	java:S117I"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©å‰–øÿÿÿÿJ$670268b6-45d3-4fd3-89e4-6caa5ea2422a
+‘	java:S117J"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥ÇÇıÿÿÿÿJ$ca1ada46-f93b-43a2-9402-56e5e4c786f0
+š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(›ÂèüÿÿÿÿÿJ$b052d791-c7a8-43e2-8326-43a136d44155
+i
+java:S1659"-Declare "bottomRightBack" on a separate line.(â·ØJ$49e6ac54-cbea-47c0-b6c3-8b9f8f69b3a8
+“
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 39 to the 15 allowed.(©ªÙïûÿÿÿÿJ$c213933f-dbd0-45f0-a700-6f58ba0b0a86
+“
+java:S3776h"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(šİÉ°ûÿÿÿÿJ$e3656778-4d58-4289-b1c5-a8a5b53f8902
+”
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 30 to the 15 allowed.(ÂÆ‹ÃşÿÿÿÿJ$6f72976a-7f98-47f9-8530-881a9b8ffabe
+”
+java:S3776¾"RRefactor this method to reduce its Cognitive Complexity from 30 to the 15 allowed.(çé°·ùÿÿÿÿJ$704f8656-0e7f-4bbe-9b6e-42bd2ef92733
+‡
+java:S6541"ÅA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 78 to 64, Complexity from 25 to 14, Nesting Level from 3 to 2, Number of Variables from 12 to 6.(©ªÙïûÿÿÿÿJ$44f46f0c-d563-4b83-b806-7e2d770e08ef

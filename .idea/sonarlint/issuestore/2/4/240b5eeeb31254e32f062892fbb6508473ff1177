@@ -1,0 +1,18 @@
+
+k	java:S117G"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡»³¦ùÿÿÿÿ
+f	java:S117H"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±†™ÿ
+k	java:S117I"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©å‰–øÿÿÿÿ
+k	java:S117J"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥ÇÇıÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(·Í°
+C
+java:S1659"-Declare "bottomRightBack" on a separate line.(â·Ø
+m
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 39 to the 15 allowed.(©ªÙïûÿÿÿÿ
+m
+java:S3776h"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(šİÉ°ûÿÿÿÿ
+n
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 30 to the 15 allowed.(ÂÆ‹Ãşÿÿÿÿ
+n
+java:S3776¾"RRefactor this method to reduce its Cognitive Complexity from 30 to the 15 allowed.(çé°·ùÿÿÿÿ
+á
+java:S6541"ÅA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 78 to 64, Complexity from 25 to 14, Nesting Level from 3 to 2, Number of Variables from 12 to 6.(©ªÙïûÿÿÿÿ

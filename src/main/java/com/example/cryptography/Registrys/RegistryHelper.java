@@ -62,9 +62,9 @@ public class RegistryHelper {
     }
 
     public static void register(IEventBus eventBus){
-        CREATIVE_MODE_TABS.register(eventBus);
-        BLOCKS.register(eventBus);
-        ITEMS.register(eventBus);
-        BLOCK_ENTITY_TYPES.register(eventBus);
+        //CREATIVE_MODE_TABS.register(eventBus);
+        //BLOCKS.register(eventBus);
+        //ITEMS.register(eventBus);
+        //BLOCK_ENTITY_TYPES.register(eventBus);
     }
 }
