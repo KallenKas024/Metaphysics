@@ -38,9 +38,6 @@ jobs:
       - name: Build
         run: ./gradlew clean build
 
-      - name: mergeJars
-        run: ./gradlew mergeJars
-
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
