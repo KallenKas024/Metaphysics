@@ -27,7 +27,7 @@ public abstract class TileComputerMixin {
         ComputerPosMapper.put(id, pos);
         cir.getReturnValue().addAPI(new CryptographyAPI());
         Level level = cir.getReturnValue().getLevel();
-        cir.getReturnValue().addAPI(new CoordinateAPI(ComputerPosMapper.get(id), id, level, cir.getReturnValue()));
+        cir.getReturnValue().addAPI(new CoordinateAPI(ComputerPosMapper.get(id), id, level, cir.getReturnValue().getComputer()));
     }
 
     @Inject(method = "<init>", at = @At("RETURN"), remap = false)
