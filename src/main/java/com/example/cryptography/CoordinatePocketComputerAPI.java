@@ -2,11 +2,11 @@ package com.example.cryptography;
 
 import dan200.computercraft.api.lua.ILuaAPI;
 import dan200.computercraft.api.lua.LuaFunction;
-import net.minecraft.world.entity.Entity;
+import dan200.computercraft.shared.pocket.core.PocketHolder;
 
 public class CoordinatePocketComputerAPI implements ILuaAPI {
 
-    private final Entity entity;
+    private final PocketHolder holder;
     private final boolean isOnPhone;
 
     @Override
@@ -14,85 +14,85 @@ public class CoordinatePocketComputerAPI implements ILuaAPI {
         return new String[] {"coordPCA", "coordinatePCA"};
     }
 
-    public CoordinatePocketComputerAPI(Entity entity, boolean isOnPhone) {
-        this.entity = entity;
+    public CoordinatePocketComputerAPI(PocketHolder holder, boolean isOnPhone) {
+        this.holder = holder;
         this.isOnPhone = isOnPhone;
     }
 
     @LuaFunction
     public final double getThisPocketComputerOwnerPosX() {
         if (isOnPhone) {
-            return entity.getBlockX();
+            return holder.blockPos().getX();
         } else return 0.0;
     }
 
     @LuaFunction
     public final double getThisPocketComputerOwnerPosY() {
         if (isOnPhone) {
-            return entity.getBlockY();
+            return holder.blockPos().getY();
         } else return 0.0;
     }
 
     @LuaFunction
     public final double getThisPocketComputerOwnerPosZ() {
         if (isOnPhone) {
-            return entity.getBlockZ();
+            return holder.blockPos().getZ();
         } else return 0.0;
     }
 
     @LuaFunction
     public final double getThisPocketComputerOwnerXRot() {
-        if (isOnPhone) {
-            return entity.getXRot();
+        if (isOnPhone && holder instanceof PocketHolder.EntityHolder) {
+            return ((PocketHolder.EntityHolder) holder).entity().getXRot();
         } else return 0.0;
     }
 
     @LuaFunction
     public final double getThisPocketComputerOwnerYRot() {
-        if (isOnPhone) {
-            return entity.getYRot();
+        if (isOnPhone && holder instanceof PocketHolder.EntityHolder) {
+            return ((PocketHolder.EntityHolder) holder).entity().getYRot();
         } else return 0.0;
     }
 
     @LuaFunction
     public final double getThisPocketComputerOwnerLookAngleX() {
-        if (isOnPhone) {
-            return entity.getLookAngle().x();
+        if (isOnPhone && holder instanceof PocketHolder.EntityHolder) {
+            return ((PocketHolder.EntityHolder) holder).entity().getLookAngle().x();
         } else return 0.0;
     }
 
     @LuaFunction
     public final double getThisPocketComputerOwnerLookAngleY() {
-        if (isOnPhone) {
-            return entity.getLookAngle().y();
+        if (isOnPhone && holder instanceof PocketHolder.EntityHolder) {
+            return ((PocketHolder.EntityHolder) holder).entity().getLookAngle().y();
         } else return 0.0;
     }
 
     @LuaFunction
     public final double getThisPocketComputerOwnerLookAngleZ() {
-        if (isOnPhone) {
-            return entity.getLookAngle().z();
+        if (isOnPhone && holder instanceof PocketHolder.EntityHolder) {
+            return ((PocketHolder.EntityHolder) holder).entity().getLookAngle().z();
         } else return 0.0;
     }
 
     @LuaFunction
     public final double getThisPocketComputerOwnerForwardPosX() {
-        if (isOnPhone) {
-            return entity.getForward().x;
+        if (isOnPhone && holder instanceof PocketHolder.EntityHolder) {
+            return ((PocketHolder.EntityHolder) holder).entity().getForward().x();
         } else return 0.0;
     }
 
     @LuaFunction
     public final double getThisPocketComputerOwnerForwardPosY() {
-        if (isOnPhone) {
-            return entity.getForward().y;
+        if (isOnPhone && holder instanceof PocketHolder.EntityHolder) {
+            return ((PocketHolder.EntityHolder) holder).entity().getForward().y();
         } else return 0.0;
     }
 
     @LuaFunction
     public final double getThisPocketComputerOwnerForwardPosZ() {
-        if (isOnPhone) {
-            return entity.getForward().z;
+        if (isOnPhone && holder instanceof PocketHolder.EntityHolder) {
+            return ((PocketHolder.EntityHolder) holder).entity().getForward().z();
         } else return 0.0;
     }
 }

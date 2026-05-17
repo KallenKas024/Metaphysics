@@ -1,4 +1,5 @@
 package com.example.cryptography;
+
 import net.minecraft.core.BlockPos;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;

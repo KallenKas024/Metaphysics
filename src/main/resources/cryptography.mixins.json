@@ -5,8 +5,8 @@
   "compatibilityLevel": "JAVA_8",
   "refmap": "cryptography.refmap.json",
   "mixins": [
-    "FixedWidthFontRendererMixin",
     "ItemPocketComputerMixin",
+    "Mixin_ServerComputer",
     "TileComputerMixin",
     "TileTurtleMixin",
     "TurtleMoveCommandMixin"

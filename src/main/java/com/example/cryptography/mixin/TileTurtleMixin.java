@@ -2,6 +2,8 @@ package com.example.cryptography.mixin;
 
 import com.example.cryptography.CoordinateAPI;
 import com.example.cryptography.CryptographyAPI;
+import com.example.cryptography.bridge.ServerComputerBridge;
+import dan200.computercraft.core.computer.Computer;
 import dan200.computercraft.shared.computer.core.ComputerFamily;
 import dan200.computercraft.shared.computer.core.ServerComputer;
 import dan200.computercraft.shared.turtle.blocks.TurtleBlockEntity;
@@ -25,10 +27,11 @@ public abstract class TileTurtleMixin {
 
     @Inject(method = "createComputer",at = @At("RETURN"),remap = false)
     private void createComputer(int id, CallbackInfoReturnable<ServerComputer> cir){
+        Computer computer = ((ServerComputerBridge) cir.getReturnValue()).bridge$cryptography$computer();
         ComputerPosMapper.put(id, pos);
-        cir.getReturnValue().addAPI(new CryptographyAPI());
+        computer.addApi(new CryptographyAPI());
         Level level = cir.getReturnValue().getLevel();
-        cir.getReturnValue().addAPI(new CoordinateAPI(ComputerPosMapper.get(id), id, level, cir.getReturnValue()));
+        computer.addApi(new CoordinateAPI(ComputerPosMapper.get(id), id, level, cir.getReturnValue()));
     }
 
     @Inject(method = "<init>", at = @At("RETURN"), remap = false)

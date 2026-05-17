@@ -1,32 +1,21 @@
 package com.example.cryptography;
 
-import com.google.gson.Gson;
 import dan200.computercraft.api.lua.ILuaAPI;
 import dan200.computercraft.api.lua.LuaFunction;
-import dan200.computercraft.client.render.ItemMapLikeRenderer;
-import dan200.computercraft.core.computer.Computer;
-import dan200.computercraft.core.computer.mainthread.MainThread;
-import dan200.computercraft.core.computer.mainthread.MainThreadScheduler;
 import dan200.computercraft.shared.computer.core.ServerComputer;
-import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.entity.monster.Zombie;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.LightLayer;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.chunk.LevelChunk;
 import net.minecraft.world.level.entity.LevelEntityGetter;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
-import net.minecraftforge.common.util.ItemStackMap;
-import net.minecraftforge.server.ServerLifecycleHooks;
 import org.jetbrains.annotations.NotNull;
 import org.joml.Vector3d;
 import org.joml.primitives.AABBdc;
@@ -34,16 +23,12 @@ import org.joml.primitives.AABBic;
 import org.valkyrienskies.core.api.ships.QueryableShipData;
 import org.valkyrienskies.core.api.ships.ServerShip;
 import org.valkyrienskies.core.api.ships.Ship;
-import org.valkyrienskies.core.impl.shadow.B;
 import org.valkyrienskies.mod.common.VSGameUtilsKt;
 import java.util.*;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.function.BiConsumer;
-import java.util.stream.IntStream;
 
 import static com.example.cryptography.Cryptography.ComputerPosMapper;
 
@@ -52,9 +37,9 @@ public class CoordinateAPI implements ILuaAPI {
     private final int id;
     private final Level level;
     public Map<Map<String, Integer>, Map<String, Object>> tmpMap;
-    private Computer computer;
+    private ServerComputer computer;
     private Thread t = null;
-    public CoordinateAPI(BlockPos pos, int id, Level level, Computer computer) {
+    public CoordinateAPI(BlockPos pos, int id, Level level, ServerComputer computer) {
         this.pos = pos;
         this.id = id;
         this.level = level;
